@@ -10,4 +10,11 @@
 
 @implementation PlayerDatabase
 
+-(void)addPlayer:(Player *)player toDatabase:(PlayerDatabase *)playerDatabase
+{
+    
+}
+
+
+
 @end

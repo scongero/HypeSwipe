@@ -24,6 +24,7 @@
 		A1D3B4C817F7511C007E96E7 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4C717F7511C007E96E7 /* PlayerView.m */; };
 		A1D3B4CB17F75177007E96E7 /* HypeSwipeGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */; };
 		A1D3B4CE17F751A7007E96E7 /* HypeSwipeGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */; };
+		A1D3B4D117F75C03007E96E7 /* ScoreboardTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4D017F75C03007E96E7 /* ScoreboardTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypeSwipeGameView.m; sourceTree = "<group>"; };
 		A1D3B4CC17F751A6007E96E7 /* HypeSwipeGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypeSwipeGameVC.h; sourceTree = "<group>"; };
 		A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypeSwipeGameVC.m; sourceTree = "<group>"; };
+		A1D3B4CF17F75C03007E96E7 /* ScoreboardTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreboardTVC.h; sourceTree = "<group>"; };
+		A1D3B4D017F75C03007E96E7 /* ScoreboardTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreboardTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +107,8 @@
 				A1D3B4B117F74E9C007E96E7 /* MainStoryboard.storyboard */,
 				A1D3B4B417F74E9C007E96E7 /* HypeSwipeViewController.h */,
 				A1D3B4B517F74E9C007E96E7 /* HypeSwipeViewController.m */,
-				A1D3B4C917F75177007E96E7 /* HypeSwipeGameView.h */,
-				A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */,
-				A1D3B4CC17F751A6007E96E7 /* HypeSwipeGameVC.h */,
-				A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */,
-				A1D3B4C617F7511C007E96E7 /* PlayerView.h */,
-				A1D3B4C717F7511C007E96E7 /* PlayerView.m */,
+				A1D3B4D217F75C0E007E96E7 /* Scoreboard */,
+				A1D3B4D317F75C21007E96E7 /* HypeSwipeGame */,
 				A1D3B4BF17F7508E007E96E7 /* Model */,
 				A1D3B4A017F74E9C007E96E7 /* Supporting Files */,
 			);
@@ -143,6 +142,28 @@
 				A1D3B4C417F750DF007E96E7 /* HypeSwipeGame.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A1D3B4D217F75C0E007E96E7 /* Scoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				A1D3B4CF17F75C03007E96E7 /* ScoreboardTVC.h */,
+				A1D3B4D017F75C03007E96E7 /* ScoreboardTVC.m */,
+			);
+			name = Scoreboard;
+			sourceTree = "<group>";
+		};
+		A1D3B4D317F75C21007E96E7 /* HypeSwipeGame */ = {
+			isa = PBXGroup;
+			children = (
+				A1D3B4C917F75177007E96E7 /* HypeSwipeGameView.h */,
+				A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */,
+				A1D3B4CC17F751A6007E96E7 /* HypeSwipeGameVC.h */,
+				A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */,
+				A1D3B4C617F7511C007E96E7 /* PlayerView.h */,
+				A1D3B4C717F7511C007E96E7 /* PlayerView.m */,
+			);
+			name = HypeSwipeGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +242,7 @@
 				A1D3B4C817F7511C007E96E7 /* PlayerView.m in Sources */,
 				A1D3B4CB17F75177007E96E7 /* HypeSwipeGameView.m in Sources */,
 				A1D3B4CE17F751A7007E96E7 /* HypeSwipeGameVC.m in Sources */,
+				A1D3B4D117F75C03007E96E7 /* ScoreboardTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

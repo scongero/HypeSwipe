@@ -7,6 +7,18 @@
 //
 
 #import "HypeSwipeGameView.h"
+#import "PlayerView.h"
+#import "HypeSwipeGame.h"
+
+@interface HypeSwipeGameView()
+
+@property (strong, nonatomic) HypeSwipeGame *game;
+@property (strong, nonatomic) PlayerView *playerView;
+
+
+
+@end
+
 
 @implementation HypeSwipeGameView
 

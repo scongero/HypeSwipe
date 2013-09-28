@@ -16,7 +16,7 @@
 @property (strong, nonatomic) NSString *number;
 @property (strong, nonatomic) NSString *position;
 @property (strong, nonatomic) NSNumber *projectedFantasyScore;
-@property (nonatomic) BOOL hyped;
+@property (nonatomic, getter = isHyped) BOOL hyped;
 
 
 @end
