@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Player.h"
 
 @interface PlayerDatabase : NSObject
+
+@property (strong, nonatomic) NSMutableArray *players;
+@property (strong, nonatomic) NSMutableArray *unswipedPlayerDatabase;
+@property (strong, nonatomic) NSMutableArray *swipedPlayerDatabase;
+
+-(void)addPlayer:(Player *)player toDatabase:(PlayerDatabase *)playerDatabase;
+-(Player *)drawNextPlayer;
 
 @end
