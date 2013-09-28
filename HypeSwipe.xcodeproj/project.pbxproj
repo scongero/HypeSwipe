@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1011A3E17F7816100E35A8C /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2317F7816100E35A8C /* icon.psd */; };
+		A1011A3F17F7816100E35A8C /* league_screen_0000_TEST-LEAGUE.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2417F7816100E35A8C /* league_screen_0000_TEST-LEAGUE.png */; };
+		A1011A4017F7816100E35A8C /* league_screen_0001_Layer-11.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2517F7816100E35A8C /* league_screen_0001_Layer-11.png */; };
+		A1011A4117F7816100E35A8C /* league_screen_0002_Layer-8.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2617F7816100E35A8C /* league_screen_0002_Layer-8.png */; };
+		A1011A4217F7816100E35A8C /* league_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2717F7816100E35A8C /* league_screen.png */; };
+		A1011A4317F7816100E35A8C /* player_screen_0000_by-Aeon-Creations-.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2817F7816100E35A8C /* player_screen_0000_by-Aeon-Creations-.png */; };
+		A1011A4417F7816100E35A8C /* player_screen_0000_Layer-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2917F7816100E35A8C /* player_screen_0000_Layer-3.png */; };
+		A1011A4517F7816100E35A8C /* player_screen_0001_Layer-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2A17F7816100E35A8C /* player_screen_0001_Layer-2.png */; };
+		A1011A4617F7816100E35A8C /* player_screen_0001_Layer-3-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2B17F7816100E35A8C /* player_screen_0001_Layer-3-copy.png */; };
+		A1011A4717F7816100E35A8C /* player_screen_0002_Layer-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2C17F7816100E35A8C /* player_screen_0002_Layer-1.png */; };
+		A1011A4817F7816100E35A8C /* player_screen_0002_Layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2D17F7816100E35A8C /* player_screen_0002_Layer-5.png */; };
+		A1011A4917F7816100E35A8C /* player_screen_0003_Layer-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2E17F7816100E35A8C /* player_screen_0003_Layer-4.png */; };
+		A1011A4A17F7816100E35A8C /* player_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A2F17F7816100E35A8C /* player_screen.png */; };
+		A1011A4B17F7816100E35A8C /* splash_screen_0000_by-Aeon-Creations-.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3017F7816100E35A8C /* splash_screen_0000_by-Aeon-Creations-.png */; };
+		A1011A4C17F7816100E35A8C /* splash_screen_0000_TEST-LEAGUE.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3117F7816100E35A8C /* splash_screen_0000_TEST-LEAGUE.png */; };
+		A1011A4D17F7816100E35A8C /* splash_screen_0001_Layer-3-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3217F7816100E35A8C /* splash_screen_0001_Layer-3-copy.png */; };
+		A1011A4E17F7816100E35A8C /* splash_screen_0001_Layer-11.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3317F7816100E35A8C /* splash_screen_0001_Layer-11.png */; };
+		A1011A4F17F7816100E35A8C /* splash_screen_0002_Layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3417F7816100E35A8C /* splash_screen_0002_Layer-5.png */; };
+		A1011A5017F7816100E35A8C /* splash_screen_0002_Layer-8.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3517F7816100E35A8C /* splash_screen_0002_Layer-8.png */; };
+		A1011A5117F7816100E35A8C /* splash_screen_0003_14.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3617F7816100E35A8C /* splash_screen_0003_14.png */; };
+		A1011A5217F7816100E35A8C /* splash_screen_0003_Layer-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3717F7816100E35A8C /* splash_screen_0003_Layer-4.png */; };
+		A1011A5317F7816100E35A8C /* splash_screen_0004_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3817F7816100E35A8C /* splash_screen_0004_Background.png */; };
+		A1011A5417F7816100E35A8C /* splash_screen_0004_Layer-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3917F7816100E35A8C /* splash_screen_0004_Layer-3.png */; };
+		A1011A5517F7816100E35A8C /* splash_screen_0005_Layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3A17F7816100E35A8C /* splash_screen_0005_Layer-5.png */; };
+		A1011A5617F7816100E35A8C /* splash_screen_0006_Layer-9.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3B17F7816100E35A8C /* splash_screen_0006_Layer-9.png */; };
+		A1011A5717F7816100E35A8C /* splash_screen_0007_Layer-10.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3C17F7816100E35A8C /* splash_screen_0007_Layer-10.png */; };
+		A1011A5817F7816100E35A8C /* splash_screen_0008_Layer-8-copy-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1011A3D17F7816100E35A8C /* splash_screen_0008_Layer-8-copy-5.png */; };
 		A1D3B49A17F74E9C007E96E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D3B49917F74E9C007E96E7 /* UIKit.framework */; };
 		A1D3B49C17F74E9C007E96E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D3B49B17F74E9C007E96E7 /* Foundation.framework */; };
 		A1D3B49E17F74E9C007E96E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D3B49D17F74E9C007E96E7 /* CoreGraphics.framework */; };
@@ -26,36 +53,36 @@
 		A1D3B4D117F75C03007E96E7 /* ScoreboardTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4D017F75C03007E96E7 /* ScoreboardTVC.m */; };
 		B7C8C6D117F77AEB003B0FA1 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C8C6D017F77AEB003B0FA1 /* SplashViewController.m */; };
 		B7C8C6D317F77B61003B0FA1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C8C6D217F77B61003B0FA1 /* QuartzCore.framework */; };
-		B7C8C6F117F77BBA003B0FA1 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6D617F77BBA003B0FA1 /* icon.psd */; };
-		B7C8C6F217F77BBA003B0FA1 /* league_screen_0000_TEST-LEAGUE.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6D717F77BBA003B0FA1 /* league_screen_0000_TEST-LEAGUE.png */; };
-		B7C8C6F317F77BBA003B0FA1 /* league_screen_0001_Layer-11.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6D817F77BBA003B0FA1 /* league_screen_0001_Layer-11.png */; };
-		B7C8C6F417F77BBA003B0FA1 /* league_screen_0002_Layer-8.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6D917F77BBA003B0FA1 /* league_screen_0002_Layer-8.png */; };
-		B7C8C6F517F77BBA003B0FA1 /* league_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6DA17F77BBA003B0FA1 /* league_screen.png */; };
-		B7C8C6F617F77BBA003B0FA1 /* player_screen_0000_by-Aeon-Creations-.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6DB17F77BBA003B0FA1 /* player_screen_0000_by-Aeon-Creations-.png */; };
-		B7C8C6F717F77BBA003B0FA1 /* player_screen_0000_Layer-3.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6DC17F77BBA003B0FA1 /* player_screen_0000_Layer-3.png */; };
-		B7C8C6F817F77BBA003B0FA1 /* player_screen_0001_Layer-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6DD17F77BBA003B0FA1 /* player_screen_0001_Layer-2.png */; };
-		B7C8C6F917F77BBA003B0FA1 /* player_screen_0001_Layer-3-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6DE17F77BBA003B0FA1 /* player_screen_0001_Layer-3-copy.png */; };
-		B7C8C6FA17F77BBA003B0FA1 /* player_screen_0002_Layer-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6DF17F77BBA003B0FA1 /* player_screen_0002_Layer-1.png */; };
-		B7C8C6FB17F77BBA003B0FA1 /* player_screen_0002_Layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E017F77BBA003B0FA1 /* player_screen_0002_Layer-5.png */; };
-		B7C8C6FC17F77BBA003B0FA1 /* player_screen_0003_Layer-4.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E117F77BBA003B0FA1 /* player_screen_0003_Layer-4.png */; };
-		B7C8C6FD17F77BBA003B0FA1 /* player_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E217F77BBA003B0FA1 /* player_screen.png */; };
-		B7C8C6FE17F77BBA003B0FA1 /* splash_screen_0000_by-Aeon-Creations-.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E317F77BBA003B0FA1 /* splash_screen_0000_by-Aeon-Creations-.png */; };
-		B7C8C6FF17F77BBA003B0FA1 /* splash_screen_0000_TEST-LEAGUE.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E417F77BBA003B0FA1 /* splash_screen_0000_TEST-LEAGUE.png */; };
-		B7C8C70017F77BBA003B0FA1 /* splash_screen_0001_Layer-3-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E517F77BBA003B0FA1 /* splash_screen_0001_Layer-3-copy.png */; };
-		B7C8C70117F77BBA003B0FA1 /* splash_screen_0001_Layer-11.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E617F77BBA003B0FA1 /* splash_screen_0001_Layer-11.png */; };
-		B7C8C70217F77BBA003B0FA1 /* splash_screen_0002_Layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E717F77BBA003B0FA1 /* splash_screen_0002_Layer-5.png */; };
-		B7C8C70317F77BBA003B0FA1 /* splash_screen_0002_Layer-8.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E817F77BBA003B0FA1 /* splash_screen_0002_Layer-8.png */; };
-		B7C8C70417F77BBA003B0FA1 /* splash_screen_0003_14.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6E917F77BBA003B0FA1 /* splash_screen_0003_14.png */; };
-		B7C8C70517F77BBA003B0FA1 /* splash_screen_0003_Layer-4.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6EA17F77BBA003B0FA1 /* splash_screen_0003_Layer-4.png */; };
-		B7C8C70617F77BBA003B0FA1 /* splash_screen_0004_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6EB17F77BBA003B0FA1 /* splash_screen_0004_Background.png */; };
-		B7C8C70717F77BBA003B0FA1 /* splash_screen_0004_Layer-3.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6EC17F77BBA003B0FA1 /* splash_screen_0004_Layer-3.png */; };
-		B7C8C70817F77BBA003B0FA1 /* splash_screen_0005_Layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6ED17F77BBA003B0FA1 /* splash_screen_0005_Layer-5.png */; };
-		B7C8C70917F77BBA003B0FA1 /* splash_screen_0006_Layer-9.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6EE17F77BBA003B0FA1 /* splash_screen_0006_Layer-9.png */; };
-		B7C8C70A17F77BBA003B0FA1 /* splash_screen_0007_Layer-10.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6EF17F77BBA003B0FA1 /* splash_screen_0007_Layer-10.png */; };
-		B7C8C70B17F77BBA003B0FA1 /* splash_screen_0008_Layer-8-copy-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C8C6F017F77BBA003B0FA1 /* splash_screen_0008_Layer-8-copy-5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1011A2317F7816100E35A8C /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = icon.psd; path = ../../../Downloads/hypeswipe_images/icon.psd; sourceTree = "<group>"; };
+		A1011A2417F7816100E35A8C /* league_screen_0000_TEST-LEAGUE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "league_screen_0000_TEST-LEAGUE.png"; path = "../../../Downloads/hypeswipe_images/league_screen_0000_TEST-LEAGUE.png"; sourceTree = "<group>"; };
+		A1011A2517F7816100E35A8C /* league_screen_0001_Layer-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "league_screen_0001_Layer-11.png"; path = "../../../Downloads/hypeswipe_images/league_screen_0001_Layer-11.png"; sourceTree = "<group>"; };
+		A1011A2617F7816100E35A8C /* league_screen_0002_Layer-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "league_screen_0002_Layer-8.png"; path = "../../../Downloads/hypeswipe_images/league_screen_0002_Layer-8.png"; sourceTree = "<group>"; };
+		A1011A2717F7816100E35A8C /* league_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = league_screen.png; path = ../../../Downloads/hypeswipe_images/league_screen.png; sourceTree = "<group>"; };
+		A1011A2817F7816100E35A8C /* player_screen_0000_by-Aeon-Creations-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "player_screen_0000_by-Aeon-Creations-.png"; path = "../../../Downloads/hypeswipe_images/player_screen_0000_by-Aeon-Creations-.png"; sourceTree = "<group>"; };
+		A1011A2917F7816100E35A8C /* player_screen_0000_Layer-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "player_screen_0000_Layer-3.png"; path = "../../../Downloads/hypeswipe_images/player_screen_0000_Layer-3.png"; sourceTree = "<group>"; };
+		A1011A2A17F7816100E35A8C /* player_screen_0001_Layer-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "player_screen_0001_Layer-2.png"; path = "../../../Downloads/hypeswipe_images/player_screen_0001_Layer-2.png"; sourceTree = "<group>"; };
+		A1011A2B17F7816100E35A8C /* player_screen_0001_Layer-3-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "player_screen_0001_Layer-3-copy.png"; path = "../../../Downloads/hypeswipe_images/player_screen_0001_Layer-3-copy.png"; sourceTree = "<group>"; };
+		A1011A2C17F7816100E35A8C /* player_screen_0002_Layer-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "player_screen_0002_Layer-1.png"; path = "../../../Downloads/hypeswipe_images/player_screen_0002_Layer-1.png"; sourceTree = "<group>"; };
+		A1011A2D17F7816100E35A8C /* player_screen_0002_Layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "player_screen_0002_Layer-5.png"; path = "../../../Downloads/hypeswipe_images/player_screen_0002_Layer-5.png"; sourceTree = "<group>"; };
+		A1011A2E17F7816100E35A8C /* player_screen_0003_Layer-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "player_screen_0003_Layer-4.png"; path = "../../../Downloads/hypeswipe_images/player_screen_0003_Layer-4.png"; sourceTree = "<group>"; };
+		A1011A2F17F7816100E35A8C /* player_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player_screen.png; path = ../../../Downloads/hypeswipe_images/player_screen.png; sourceTree = "<group>"; };
+		A1011A3017F7816100E35A8C /* splash_screen_0000_by-Aeon-Creations-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0000_by-Aeon-Creations-.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0000_by-Aeon-Creations-.png"; sourceTree = "<group>"; };
+		A1011A3117F7816100E35A8C /* splash_screen_0000_TEST-LEAGUE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0000_TEST-LEAGUE.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0000_TEST-LEAGUE.png"; sourceTree = "<group>"; };
+		A1011A3217F7816100E35A8C /* splash_screen_0001_Layer-3-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0001_Layer-3-copy.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0001_Layer-3-copy.png"; sourceTree = "<group>"; };
+		A1011A3317F7816100E35A8C /* splash_screen_0001_Layer-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0001_Layer-11.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0001_Layer-11.png"; sourceTree = "<group>"; };
+		A1011A3417F7816100E35A8C /* splash_screen_0002_Layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0002_Layer-5.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0002_Layer-5.png"; sourceTree = "<group>"; };
+		A1011A3517F7816100E35A8C /* splash_screen_0002_Layer-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0002_Layer-8.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0002_Layer-8.png"; sourceTree = "<group>"; };
+		A1011A3617F7816100E35A8C /* splash_screen_0003_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash_screen_0003_14.png; path = ../../../Downloads/hypeswipe_images/splash_screen_0003_14.png; sourceTree = "<group>"; };
+		A1011A3717F7816100E35A8C /* splash_screen_0003_Layer-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0003_Layer-4.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0003_Layer-4.png"; sourceTree = "<group>"; };
+		A1011A3817F7816100E35A8C /* splash_screen_0004_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash_screen_0004_Background.png; path = ../../../Downloads/hypeswipe_images/splash_screen_0004_Background.png; sourceTree = "<group>"; };
+		A1011A3917F7816100E35A8C /* splash_screen_0004_Layer-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0004_Layer-3.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0004_Layer-3.png"; sourceTree = "<group>"; };
+		A1011A3A17F7816100E35A8C /* splash_screen_0005_Layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0005_Layer-5.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0005_Layer-5.png"; sourceTree = "<group>"; };
+		A1011A3B17F7816100E35A8C /* splash_screen_0006_Layer-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0006_Layer-9.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0006_Layer-9.png"; sourceTree = "<group>"; };
+		A1011A3C17F7816100E35A8C /* splash_screen_0007_Layer-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0007_Layer-10.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0007_Layer-10.png"; sourceTree = "<group>"; };
+		A1011A3D17F7816100E35A8C /* splash_screen_0008_Layer-8-copy-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_0008_Layer-8-copy-5.png"; path = "../../../Downloads/hypeswipe_images/splash_screen_0008_Layer-8-copy-5.png"; sourceTree = "<group>"; };
 		A1D3B49617F74E9C007E96E7 /* HypeSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypeSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D3B49917F74E9C007E96E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1D3B49B17F74E9C007E96E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,33 +114,6 @@
 		B7C8C6CF17F77AEB003B0FA1 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = ../SplashViewController.h; sourceTree = "<group>"; };
 		B7C8C6D017F77AEB003B0FA1 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = ../SplashViewController.m; sourceTree = "<group>"; };
 		B7C8C6D217F77B61003B0FA1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B7C8C6D617F77BBA003B0FA1 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = icon.psd; path = "../../../Downloads/hypeswipe_images-1/icon.psd"; sourceTree = "<group>"; };
-		B7C8C6D717F77BBA003B0FA1 /* league_screen_0000_TEST-LEAGUE.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "league_screen_0000_TEST-LEAGUE.png"; path = "../../../Downloads/hypeswipe_images-1/league_screen_0000_TEST-LEAGUE.png"; sourceTree = "<group>"; };
-		B7C8C6D817F77BBA003B0FA1 /* league_screen_0001_Layer-11.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "league_screen_0001_Layer-11.png"; path = "../../../Downloads/hypeswipe_images-1/league_screen_0001_Layer-11.png"; sourceTree = "<group>"; };
-		B7C8C6D917F77BBA003B0FA1 /* league_screen_0002_Layer-8.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "league_screen_0002_Layer-8.png"; path = "../../../Downloads/hypeswipe_images-1/league_screen_0002_Layer-8.png"; sourceTree = "<group>"; };
-		B7C8C6DA17F77BBA003B0FA1 /* league_screen.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = league_screen.png; path = "../../../Downloads/hypeswipe_images-1/league_screen.png"; sourceTree = "<group>"; };
-		B7C8C6DB17F77BBA003B0FA1 /* player_screen_0000_by-Aeon-Creations-.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "player_screen_0000_by-Aeon-Creations-.png"; path = "../../../Downloads/hypeswipe_images-1/player_screen_0000_by-Aeon-Creations-.png"; sourceTree = "<group>"; };
-		B7C8C6DC17F77BBA003B0FA1 /* player_screen_0000_Layer-3.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "player_screen_0000_Layer-3.png"; path = "../../../Downloads/hypeswipe_images-1/player_screen_0000_Layer-3.png"; sourceTree = "<group>"; };
-		B7C8C6DD17F77BBA003B0FA1 /* player_screen_0001_Layer-2.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "player_screen_0001_Layer-2.png"; path = "../../../Downloads/hypeswipe_images-1/player_screen_0001_Layer-2.png"; sourceTree = "<group>"; };
-		B7C8C6DE17F77BBA003B0FA1 /* player_screen_0001_Layer-3-copy.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "player_screen_0001_Layer-3-copy.png"; path = "../../../Downloads/hypeswipe_images-1/player_screen_0001_Layer-3-copy.png"; sourceTree = "<group>"; };
-		B7C8C6DF17F77BBA003B0FA1 /* player_screen_0002_Layer-1.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "player_screen_0002_Layer-1.png"; path = "../../../Downloads/hypeswipe_images-1/player_screen_0002_Layer-1.png"; sourceTree = "<group>"; };
-		B7C8C6E017F77BBA003B0FA1 /* player_screen_0002_Layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "player_screen_0002_Layer-5.png"; path = "../../../Downloads/hypeswipe_images-1/player_screen_0002_Layer-5.png"; sourceTree = "<group>"; };
-		B7C8C6E117F77BBA003B0FA1 /* player_screen_0003_Layer-4.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "player_screen_0003_Layer-4.png"; path = "../../../Downloads/hypeswipe_images-1/player_screen_0003_Layer-4.png"; sourceTree = "<group>"; };
-		B7C8C6E217F77BBA003B0FA1 /* player_screen.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = player_screen.png; path = "../../../Downloads/hypeswipe_images-1/player_screen.png"; sourceTree = "<group>"; };
-		B7C8C6E317F77BBA003B0FA1 /* splash_screen_0000_by-Aeon-Creations-.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0000_by-Aeon-Creations-.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0000_by-Aeon-Creations-.png"; sourceTree = "<group>"; };
-		B7C8C6E417F77BBA003B0FA1 /* splash_screen_0000_TEST-LEAGUE.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0000_TEST-LEAGUE.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0000_TEST-LEAGUE.png"; sourceTree = "<group>"; };
-		B7C8C6E517F77BBA003B0FA1 /* splash_screen_0001_Layer-3-copy.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0001_Layer-3-copy.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0001_Layer-3-copy.png"; sourceTree = "<group>"; };
-		B7C8C6E617F77BBA003B0FA1 /* splash_screen_0001_Layer-11.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0001_Layer-11.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0001_Layer-11.png"; sourceTree = "<group>"; };
-		B7C8C6E717F77BBA003B0FA1 /* splash_screen_0002_Layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0002_Layer-5.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0002_Layer-5.png"; sourceTree = "<group>"; };
-		B7C8C6E817F77BBA003B0FA1 /* splash_screen_0002_Layer-8.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0002_Layer-8.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0002_Layer-8.png"; sourceTree = "<group>"; };
-		B7C8C6E917F77BBA003B0FA1 /* splash_screen_0003_14.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = splash_screen_0003_14.png; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0003_14.png"; sourceTree = "<group>"; };
-		B7C8C6EA17F77BBA003B0FA1 /* splash_screen_0003_Layer-4.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0003_Layer-4.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0003_Layer-4.png"; sourceTree = "<group>"; };
-		B7C8C6EB17F77BBA003B0FA1 /* splash_screen_0004_Background.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = splash_screen_0004_Background.png; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0004_Background.png"; sourceTree = "<group>"; };
-		B7C8C6EC17F77BBA003B0FA1 /* splash_screen_0004_Layer-3.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0004_Layer-3.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0004_Layer-3.png"; sourceTree = "<group>"; };
-		B7C8C6ED17F77BBA003B0FA1 /* splash_screen_0005_Layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0005_Layer-5.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0005_Layer-5.png"; sourceTree = "<group>"; };
-		B7C8C6EE17F77BBA003B0FA1 /* splash_screen_0006_Layer-9.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0006_Layer-9.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0006_Layer-9.png"; sourceTree = "<group>"; };
-		B7C8C6EF17F77BBA003B0FA1 /* splash_screen_0007_Layer-10.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0007_Layer-10.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0007_Layer-10.png"; sourceTree = "<group>"; };
-		B7C8C6F017F77BBA003B0FA1 /* splash_screen_0008_Layer-8-copy-5.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "splash_screen_0008_Layer-8-copy-5.png"; path = "../../../Downloads/hypeswipe_images-1/splash_screen_0008_Layer-8-copy-5.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,33 +176,33 @@
 		A1D3B4A017F74E9C007E96E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7C8C6D617F77BBA003B0FA1 /* icon.psd */,
-				B7C8C6D717F77BBA003B0FA1 /* league_screen_0000_TEST-LEAGUE.png */,
-				B7C8C6D817F77BBA003B0FA1 /* league_screen_0001_Layer-11.png */,
-				B7C8C6D917F77BBA003B0FA1 /* league_screen_0002_Layer-8.png */,
-				B7C8C6DA17F77BBA003B0FA1 /* league_screen.png */,
-				B7C8C6DB17F77BBA003B0FA1 /* player_screen_0000_by-Aeon-Creations-.png */,
-				B7C8C6DC17F77BBA003B0FA1 /* player_screen_0000_Layer-3.png */,
-				B7C8C6DD17F77BBA003B0FA1 /* player_screen_0001_Layer-2.png */,
-				B7C8C6DE17F77BBA003B0FA1 /* player_screen_0001_Layer-3-copy.png */,
-				B7C8C6DF17F77BBA003B0FA1 /* player_screen_0002_Layer-1.png */,
-				B7C8C6E017F77BBA003B0FA1 /* player_screen_0002_Layer-5.png */,
-				B7C8C6E117F77BBA003B0FA1 /* player_screen_0003_Layer-4.png */,
-				B7C8C6E217F77BBA003B0FA1 /* player_screen.png */,
-				B7C8C6E317F77BBA003B0FA1 /* splash_screen_0000_by-Aeon-Creations-.png */,
-				B7C8C6E417F77BBA003B0FA1 /* splash_screen_0000_TEST-LEAGUE.png */,
-				B7C8C6E517F77BBA003B0FA1 /* splash_screen_0001_Layer-3-copy.png */,
-				B7C8C6E617F77BBA003B0FA1 /* splash_screen_0001_Layer-11.png */,
-				B7C8C6E717F77BBA003B0FA1 /* splash_screen_0002_Layer-5.png */,
-				B7C8C6E817F77BBA003B0FA1 /* splash_screen_0002_Layer-8.png */,
-				B7C8C6E917F77BBA003B0FA1 /* splash_screen_0003_14.png */,
-				B7C8C6EA17F77BBA003B0FA1 /* splash_screen_0003_Layer-4.png */,
-				B7C8C6EB17F77BBA003B0FA1 /* splash_screen_0004_Background.png */,
-				B7C8C6EC17F77BBA003B0FA1 /* splash_screen_0004_Layer-3.png */,
-				B7C8C6ED17F77BBA003B0FA1 /* splash_screen_0005_Layer-5.png */,
-				B7C8C6EE17F77BBA003B0FA1 /* splash_screen_0006_Layer-9.png */,
-				B7C8C6EF17F77BBA003B0FA1 /* splash_screen_0007_Layer-10.png */,
-				B7C8C6F017F77BBA003B0FA1 /* splash_screen_0008_Layer-8-copy-5.png */,
+				A1011A2317F7816100E35A8C /* icon.psd */,
+				A1011A2417F7816100E35A8C /* league_screen_0000_TEST-LEAGUE.png */,
+				A1011A2517F7816100E35A8C /* league_screen_0001_Layer-11.png */,
+				A1011A2617F7816100E35A8C /* league_screen_0002_Layer-8.png */,
+				A1011A2717F7816100E35A8C /* league_screen.png */,
+				A1011A2817F7816100E35A8C /* player_screen_0000_by-Aeon-Creations-.png */,
+				A1011A2917F7816100E35A8C /* player_screen_0000_Layer-3.png */,
+				A1011A2A17F7816100E35A8C /* player_screen_0001_Layer-2.png */,
+				A1011A2B17F7816100E35A8C /* player_screen_0001_Layer-3-copy.png */,
+				A1011A2C17F7816100E35A8C /* player_screen_0002_Layer-1.png */,
+				A1011A2D17F7816100E35A8C /* player_screen_0002_Layer-5.png */,
+				A1011A2E17F7816100E35A8C /* player_screen_0003_Layer-4.png */,
+				A1011A2F17F7816100E35A8C /* player_screen.png */,
+				A1011A3017F7816100E35A8C /* splash_screen_0000_by-Aeon-Creations-.png */,
+				A1011A3117F7816100E35A8C /* splash_screen_0000_TEST-LEAGUE.png */,
+				A1011A3217F7816100E35A8C /* splash_screen_0001_Layer-3-copy.png */,
+				A1011A3317F7816100E35A8C /* splash_screen_0001_Layer-11.png */,
+				A1011A3417F7816100E35A8C /* splash_screen_0002_Layer-5.png */,
+				A1011A3517F7816100E35A8C /* splash_screen_0002_Layer-8.png */,
+				A1011A3617F7816100E35A8C /* splash_screen_0003_14.png */,
+				A1011A3717F7816100E35A8C /* splash_screen_0003_Layer-4.png */,
+				A1011A3817F7816100E35A8C /* splash_screen_0004_Background.png */,
+				A1011A3917F7816100E35A8C /* splash_screen_0004_Layer-3.png */,
+				A1011A3A17F7816100E35A8C /* splash_screen_0005_Layer-5.png */,
+				A1011A3B17F7816100E35A8C /* splash_screen_0006_Layer-9.png */,
+				A1011A3C17F7816100E35A8C /* splash_screen_0007_Layer-10.png */,
+				A1011A3D17F7816100E35A8C /* splash_screen_0008_Layer-8-copy-5.png */,
 				A1D3B4A817F74E9C007E96E7 /* HypeSwipeAppDelegate.h */,
 				A1D3B4A917F74E9C007E96E7 /* HypeSwipeAppDelegate.m */,
 				A1D3B4A117F74E9C007E96E7 /* HypeSwipe-Info.plist */,
@@ -308,33 +308,33 @@
 				A1D3B4AE17F74E9C007E96E7 /* Default@2x.png in Resources */,
 				A1D3B4B017F74E9C007E96E7 /* Default-568h@2x.png in Resources */,
 				A1D3B4B317F74E9C007E96E7 /* MainStoryboard.storyboard in Resources */,
-				B7C8C6F117F77BBA003B0FA1 /* icon.psd in Resources */,
-				B7C8C6F217F77BBA003B0FA1 /* league_screen_0000_TEST-LEAGUE.png in Resources */,
-				B7C8C6F317F77BBA003B0FA1 /* league_screen_0001_Layer-11.png in Resources */,
-				B7C8C6F417F77BBA003B0FA1 /* league_screen_0002_Layer-8.png in Resources */,
-				B7C8C6F517F77BBA003B0FA1 /* league_screen.png in Resources */,
-				B7C8C6F617F77BBA003B0FA1 /* player_screen_0000_by-Aeon-Creations-.png in Resources */,
-				B7C8C6F717F77BBA003B0FA1 /* player_screen_0000_Layer-3.png in Resources */,
-				B7C8C6F817F77BBA003B0FA1 /* player_screen_0001_Layer-2.png in Resources */,
-				B7C8C6F917F77BBA003B0FA1 /* player_screen_0001_Layer-3-copy.png in Resources */,
-				B7C8C6FA17F77BBA003B0FA1 /* player_screen_0002_Layer-1.png in Resources */,
-				B7C8C6FB17F77BBA003B0FA1 /* player_screen_0002_Layer-5.png in Resources */,
-				B7C8C6FC17F77BBA003B0FA1 /* player_screen_0003_Layer-4.png in Resources */,
-				B7C8C6FD17F77BBA003B0FA1 /* player_screen.png in Resources */,
-				B7C8C6FE17F77BBA003B0FA1 /* splash_screen_0000_by-Aeon-Creations-.png in Resources */,
-				B7C8C6FF17F77BBA003B0FA1 /* splash_screen_0000_TEST-LEAGUE.png in Resources */,
-				B7C8C70017F77BBA003B0FA1 /* splash_screen_0001_Layer-3-copy.png in Resources */,
-				B7C8C70117F77BBA003B0FA1 /* splash_screen_0001_Layer-11.png in Resources */,
-				B7C8C70217F77BBA003B0FA1 /* splash_screen_0002_Layer-5.png in Resources */,
-				B7C8C70317F77BBA003B0FA1 /* splash_screen_0002_Layer-8.png in Resources */,
-				B7C8C70417F77BBA003B0FA1 /* splash_screen_0003_14.png in Resources */,
-				B7C8C70517F77BBA003B0FA1 /* splash_screen_0003_Layer-4.png in Resources */,
-				B7C8C70617F77BBA003B0FA1 /* splash_screen_0004_Background.png in Resources */,
-				B7C8C70717F77BBA003B0FA1 /* splash_screen_0004_Layer-3.png in Resources */,
-				B7C8C70817F77BBA003B0FA1 /* splash_screen_0005_Layer-5.png in Resources */,
-				B7C8C70917F77BBA003B0FA1 /* splash_screen_0006_Layer-9.png in Resources */,
-				B7C8C70A17F77BBA003B0FA1 /* splash_screen_0007_Layer-10.png in Resources */,
-				B7C8C70B17F77BBA003B0FA1 /* splash_screen_0008_Layer-8-copy-5.png in Resources */,
+				A1011A3E17F7816100E35A8C /* icon.psd in Resources */,
+				A1011A3F17F7816100E35A8C /* league_screen_0000_TEST-LEAGUE.png in Resources */,
+				A1011A4017F7816100E35A8C /* league_screen_0001_Layer-11.png in Resources */,
+				A1011A4117F7816100E35A8C /* league_screen_0002_Layer-8.png in Resources */,
+				A1011A4217F7816100E35A8C /* league_screen.png in Resources */,
+				A1011A4317F7816100E35A8C /* player_screen_0000_by-Aeon-Creations-.png in Resources */,
+				A1011A4417F7816100E35A8C /* player_screen_0000_Layer-3.png in Resources */,
+				A1011A4517F7816100E35A8C /* player_screen_0001_Layer-2.png in Resources */,
+				A1011A4617F7816100E35A8C /* player_screen_0001_Layer-3-copy.png in Resources */,
+				A1011A4717F7816100E35A8C /* player_screen_0002_Layer-1.png in Resources */,
+				A1011A4817F7816100E35A8C /* player_screen_0002_Layer-5.png in Resources */,
+				A1011A4917F7816100E35A8C /* player_screen_0003_Layer-4.png in Resources */,
+				A1011A4A17F7816100E35A8C /* player_screen.png in Resources */,
+				A1011A4B17F7816100E35A8C /* splash_screen_0000_by-Aeon-Creations-.png in Resources */,
+				A1011A4C17F7816100E35A8C /* splash_screen_0000_TEST-LEAGUE.png in Resources */,
+				A1011A4D17F7816100E35A8C /* splash_screen_0001_Layer-3-copy.png in Resources */,
+				A1011A4E17F7816100E35A8C /* splash_screen_0001_Layer-11.png in Resources */,
+				A1011A4F17F7816100E35A8C /* splash_screen_0002_Layer-5.png in Resources */,
+				A1011A5017F7816100E35A8C /* splash_screen_0002_Layer-8.png in Resources */,
+				A1011A5117F7816100E35A8C /* splash_screen_0003_14.png in Resources */,
+				A1011A5217F7816100E35A8C /* splash_screen_0003_Layer-4.png in Resources */,
+				A1011A5317F7816100E35A8C /* splash_screen_0004_Background.png in Resources */,
+				A1011A5417F7816100E35A8C /* splash_screen_0004_Layer-3.png in Resources */,
+				A1011A5517F7816100E35A8C /* splash_screen_0005_Layer-5.png in Resources */,
+				A1011A5617F7816100E35A8C /* splash_screen_0006_Layer-9.png in Resources */,
+				A1011A5717F7816100E35A8C /* splash_screen_0007_Layer-10.png in Resources */,
+				A1011A5817F7816100E35A8C /* splash_screen_0008_Layer-8-copy-5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
