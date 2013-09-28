@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Player.h"
 #import "PlayerDatabase.h"
+
 @interface HypeSwipeGame : NSObject
 
 @property (strong, nonatomic) NSNumber *myScore;
