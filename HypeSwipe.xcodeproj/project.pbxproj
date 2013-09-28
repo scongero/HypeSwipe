@@ -18,6 +18,12 @@
 		A1D3B4B017F74E9C007E96E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D3B4AF17F74E9C007E96E7 /* Default-568h@2x.png */; };
 		A1D3B4B317F74E9C007E96E7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3B4B117F74E9C007E96E7 /* MainStoryboard.storyboard */; };
 		A1D3B4B617F74E9C007E96E7 /* HypeSwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4B517F74E9C007E96E7 /* HypeSwipeViewController.m */; };
+		A1D3B4BE17F75072007E96E7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4BD17F75072007E96E7 /* Player.m */; };
+		A1D3B4C217F750C4007E96E7 /* PlayerDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4C117F750C4007E96E7 /* PlayerDatabase.m */; };
+		A1D3B4C517F750DF007E96E7 /* HypeSwipeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4C417F750DF007E96E7 /* HypeSwipeGame.m */; };
+		A1D3B4C817F7511C007E96E7 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4C717F7511C007E96E7 /* PlayerView.m */; };
+		A1D3B4CB17F75177007E96E7 /* HypeSwipeGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */; };
+		A1D3B4CE17F751A7007E96E7 /* HypeSwipeGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,18 @@
 		A1D3B4B217F74E9C007E96E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A1D3B4B417F74E9C007E96E7 /* HypeSwipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HypeSwipeViewController.h; sourceTree = "<group>"; };
 		A1D3B4B517F74E9C007E96E7 /* HypeSwipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypeSwipeViewController.m; sourceTree = "<group>"; };
+		A1D3B4BC17F75072007E96E7 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Model/Player.h; sourceTree = "<group>"; };
+		A1D3B4BD17F75072007E96E7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Model/Player.m; sourceTree = "<group>"; };
+		A1D3B4C017F750C4007E96E7 /* PlayerDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDatabase.h; sourceTree = "<group>"; };
+		A1D3B4C117F750C4007E96E7 /* PlayerDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDatabase.m; sourceTree = "<group>"; };
+		A1D3B4C317F750DF007E96E7 /* HypeSwipeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypeSwipeGame.h; sourceTree = "<group>"; };
+		A1D3B4C417F750DF007E96E7 /* HypeSwipeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypeSwipeGame.m; sourceTree = "<group>"; };
+		A1D3B4C617F7511C007E96E7 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		A1D3B4C717F7511C007E96E7 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		A1D3B4C917F75177007E96E7 /* HypeSwipeGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypeSwipeGameView.h; sourceTree = "<group>"; };
+		A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypeSwipeGameView.m; sourceTree = "<group>"; };
+		A1D3B4CC17F751A6007E96E7 /* HypeSwipeGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypeSwipeGameVC.h; sourceTree = "<group>"; };
+		A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypeSwipeGameVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +101,16 @@
 		A1D3B49F17F74E9C007E96E7 /* HypeSwipe */ = {
 			isa = PBXGroup;
 			children = (
-				A1D3B4A817F74E9C007E96E7 /* HypeSwipeAppDelegate.h */,
-				A1D3B4A917F74E9C007E96E7 /* HypeSwipeAppDelegate.m */,
 				A1D3B4B117F74E9C007E96E7 /* MainStoryboard.storyboard */,
 				A1D3B4B417F74E9C007E96E7 /* HypeSwipeViewController.h */,
 				A1D3B4B517F74E9C007E96E7 /* HypeSwipeViewController.m */,
+				A1D3B4C917F75177007E96E7 /* HypeSwipeGameView.h */,
+				A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */,
+				A1D3B4CC17F751A6007E96E7 /* HypeSwipeGameVC.h */,
+				A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */,
+				A1D3B4C617F7511C007E96E7 /* PlayerView.h */,
+				A1D3B4C717F7511C007E96E7 /* PlayerView.m */,
+				A1D3B4BF17F7508E007E96E7 /* Model */,
 				A1D3B4A017F74E9C007E96E7 /* Supporting Files */,
 			);
 			path = HypeSwipe;
@@ -96,6 +119,8 @@
 		A1D3B4A017F74E9C007E96E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1D3B4A817F74E9C007E96E7 /* HypeSwipeAppDelegate.h */,
+				A1D3B4A917F74E9C007E96E7 /* HypeSwipeAppDelegate.m */,
 				A1D3B4A117F74E9C007E96E7 /* HypeSwipe-Info.plist */,
 				A1D3B4A217F74E9C007E96E7 /* InfoPlist.strings */,
 				A1D3B4A517F74E9C007E96E7 /* main.m */,
@@ -105,6 +130,19 @@
 				A1D3B4AF17F74E9C007E96E7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D3B4BF17F7508E007E96E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1D3B4BC17F75072007E96E7 /* Player.h */,
+				A1D3B4BD17F75072007E96E7 /* Player.m */,
+				A1D3B4C017F750C4007E96E7 /* PlayerDatabase.h */,
+				A1D3B4C117F750C4007E96E7 /* PlayerDatabase.m */,
+				A1D3B4C317F750DF007E96E7 /* HypeSwipeGame.h */,
+				A1D3B4C417F750DF007E96E7 /* HypeSwipeGame.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +215,12 @@
 				A1D3B4A617F74E9C007E96E7 /* main.m in Sources */,
 				A1D3B4AA17F74E9C007E96E7 /* HypeSwipeAppDelegate.m in Sources */,
 				A1D3B4B617F74E9C007E96E7 /* HypeSwipeViewController.m in Sources */,
+				A1D3B4BE17F75072007E96E7 /* Player.m in Sources */,
+				A1D3B4C217F750C4007E96E7 /* PlayerDatabase.m in Sources */,
+				A1D3B4C517F750DF007E96E7 /* HypeSwipeGame.m in Sources */,
+				A1D3B4C817F7511C007E96E7 /* PlayerView.m in Sources */,
+				A1D3B4CB17F75177007E96E7 /* HypeSwipeGameView.m in Sources */,
+				A1D3B4CE17F751A7007E96E7 /* HypeSwipeGameVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
