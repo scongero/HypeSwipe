@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Aeon. All rights reserved.
 //
 
-// it worked!!
+// please tell me it worked
 
 #import <UIKit/UIKit.h>
 
