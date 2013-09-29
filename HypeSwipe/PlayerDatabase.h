@@ -26,6 +26,9 @@
 + (NSArray *)fantasyTeams;
 + (NSMutableArray *)playerClass;
 + (NSArray *)playerImages;
++ (NSArray *)teamRanks;
++ (NSArray *)friendTeams;
++ (NSArray *)friendTeamScores;
 +(NSMutableDictionary *)playerDictionary;
 +(NSMutableDictionary *)unswipedPlayerDatabase;
 +(NSMutableDictionary *)swipedPlayerDatabase;
