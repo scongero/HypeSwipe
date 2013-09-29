@@ -17,7 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *positionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *playerNameLabel;
-
+@property (weak, nonatomic) IBOutlet UIView *redArrow;
+@property (weak, nonatomic) IBOutlet UIView *greenArrow;
 
 //Player Dictionary
 @property (strong,nonatomic) PlayerDatabase *playerDatabase;
@@ -50,17 +51,17 @@
 -(void)setNumberLabel:(UILabel *)numberLabel usingPlayer:(Player *)player
 {
     
-    self.numberLabel.text = player.team;
+    self.numberLabel.text = player.number;
 }
 -(void)setPositionLabel:(UILabel *)positionLabel usingPlayer:(Player *)player
 {
     
-    self.positionLabel.text = player.team;
+    self.positionLabel.text = player.position;
 }
 -(void)setPlayerNameLabel:(UILabel *)playerNameLabel usingPlayer:(Player *)player
 {
     
-    self.playerNameLabel.text = player.team;
+    self.playerNameLabel.text = player.name;
 }
 
 -(void)viewDidLayoutSubviews
@@ -70,8 +71,17 @@
     if(self.notFirst==false)
     {
         Player *player1 = [PlayerDatabase drawNextPlayer];
+        [self setTeamLabel:self.teamLabel usingPlayer:player1];
+        [self setPlayerNameLabel:self.playerNameLabel usingPlayer:player1];
+        [self setPositionLabel:self.positionLabel usingPlayer:player1];
         Player *player2 = [PlayerDatabase drawNextPlayer];
+        [self setTeamLabel:self.teamLabel usingPlayer:player2];
+        [self setPlayerNameLabel:self.playerNameLabel usingPlayer:player2];
+        [self setPositionLabel:self.positionLabel usingPlayer:player2];
         Player *player3 = [PlayerDatabase drawNextPlayer];
+        [self setTeamLabel:self.teamLabel usingPlayer:player3];
+        [self setPlayerNameLabel:self.playerNameLabel usingPlayer:player3];
+        [self setPositionLabel:self.positionLabel usingPlayer:player3];
         playerViewArray = [[NSMutableArray alloc] initWithObjects:player1,player2,player3, nil];
     }
     
@@ -88,6 +98,9 @@
         NSLog(@"image: %@",[self.image description]);
         self.photoView.image = [UIImage imageNamed:[player.playerImage description]];
         [self.scrollView addSubview:self.photoView];
+        [self setTeamLabel:self.teamLabel usingPlayer:player];
+        [self setPlayerNameLabel:self.playerNameLabel usingPlayer:player];
+        [self setPositionLabel:self.positionLabel usingPlayer:player];
         [self.scrollView setShowsHorizontalScrollIndicator:NO];
         [self.scrollView setShowsVerticalScrollIndicator:NO];
         
@@ -155,12 +168,23 @@
 
 
     
-    
-    
-    
 
 
 
+- (IBAction)swipeDown:(UISwipeGestureRecognizer *)sender {
+    
+  
+
+}
+
+
+- (IBAction)hypeUp:(UISwipeGestureRecognizer *)sender {
+    [UIView transitionWithView:self.greenArrow duration:0.3 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.greenArrow.center = CGPointMake(260, -100);
+    }
+                         completion:NULL];
+
+}
 
 
 

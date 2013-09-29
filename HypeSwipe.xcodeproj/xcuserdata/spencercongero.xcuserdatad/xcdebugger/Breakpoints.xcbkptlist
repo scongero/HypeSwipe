@@ -8,11 +8,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "HypeSwipe/HypeSwipeGameVC.m"
-         timestampString = "402144824.513605"
+         timestampString = "402178295.705822"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "52"
-         endingLineNumber = "52">
+         startingLineNumber = "88"
+         endingLineNumber = "88"
+         landmarkName = "-viewDidLayoutSubviews"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

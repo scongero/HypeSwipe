@@ -108,20 +108,61 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="I1A-Pg-i0K">
-                                <color key="pageIndicatorTintColor" red="1" green="0.0" blue="0.02169921121" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.1105147806" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrn-Qp-9wJ">
                                 <connections>
                                     <outlet property="delegate" destination="zfp-iq-o9P" id="cJd-Ek-zIX"/>
                                 </connections>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-Im-1k4">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="scaleToFill" image="redarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="jyq-Dl-zXC">
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="tu9-1o-N2z"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="BxD-9Z-vza" appends="YES" id="nrJ-vE-Yhx"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jyq-Dl-zXC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="JmS-NT-z2i"/>
+                                    <constraint firstItem="jyq-Dl-zXC" firstAttribute="top" secondItem="1uR-Im-1k4" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Sew-ke-Php"/>
+                                    <constraint firstItem="jyq-Dl-zXC" firstAttribute="leading" secondItem="1uR-Im-1k4" secondAttribute="leading" constant="25" id="iDc-wV-hed"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-O0-prK">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="greenarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="2td-4k-Xxr">
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="qlc-Xh-ufW"/>
+                                            <constraint firstAttribute="height" constant="96" id="tvS-Xg-SqA"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="twx-7p-hcn" appends="YES" id="msQ-21-WKp"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2td-4k-Xxr" firstAttribute="leading" secondItem="VdU-O0-prK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="177-1j-H8Q"/>
+                                    <constraint firstItem="2td-4k-Xxr" firstAttribute="top" secondItem="VdU-O0-prK" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Kek-GK-Jr4"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-qe-YVe">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="195" id="Ykr-lb-Vaz"/>
                                     <constraint firstAttribute="height" constant="32" id="g2Y-32-8RN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -144,7 +185,11 @@
                             <constraint firstItem="Izq-GI-tVg" firstAttribute="trailing" secondItem="hx3-wd-xu5" secondAttribute="trailing" type="default" id="Jdo-nb-QCL"/>
                             <constraint firstItem="Izq-GI-tVg" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="-20" id="KcZ-mG-NKA"/>
                             <constraint firstItem="mdz-eS-x3G" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="L40-2k-Ck2"/>
+                            <constraint firstItem="1uR-Im-1k4" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="-11" id="QZ7-Tt-cBE"/>
                             <constraint firstAttribute="trailing" secondItem="I1A-Pg-i0K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Sgx-QX-Oco"/>
+                            <constraint firstAttribute="bottom" secondItem="1uR-Im-1k4" secondAttribute="bottom" constant="192" id="UC1-IG-CF3"/>
+                            <constraint firstAttribute="bottom" secondItem="VdU-O0-prK" secondAttribute="bottom" constant="174" id="WPM-hf-hF6"/>
+                            <constraint firstItem="1uR-Im-1k4" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="82" id="XhQ-Rm-jQw"/>
                             <constraint firstAttribute="trailing" secondItem="KBp-qe-YVe" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ZbY-xm-SRv"/>
                             <constraint firstItem="6GJ-Vd-JJ6" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" type="default" id="c2t-KN-pWT"/>
                             <constraint firstItem="xrn-Qp-9wJ" firstAttribute="trailing" secondItem="hx3-wd-xu5" secondAttribute="trailing" type="default" id="cag-CO-IaI"/>
@@ -152,27 +197,43 @@
                             <constraint firstItem="vUU-M6-ljV" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gqi-v1-O3r"/>
                             <constraint firstItem="vUU-M6-ljV" firstAttribute="top" secondItem="I1A-Pg-i0K" secondAttribute="top" type="default" id="hPG-9C-Ah4"/>
                             <constraint firstItem="mdz-eS-x3G" firstAttribute="baseline" secondItem="GeA-uP-7DX" secondAttribute="baseline" type="default" id="j0M-7l-g8Z"/>
+                            <constraint firstAttribute="trailing" secondItem="1uR-Im-1k4" secondAttribute="trailing" constant="209" id="kb3-FO-UBS"/>
                             <constraint firstItem="I1A-Pg-i0K" firstAttribute="bottom" secondItem="mdz-eS-x3G" secondAttribute="bottom" type="default" id="kpP-Sh-OZM"/>
                             <constraint firstItem="mdz-eS-x3G" firstAttribute="leading" secondItem="vUU-M6-ljV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="oBE-ZF-Xef"/>
                             <constraint firstItem="mdz-eS-x3G" firstAttribute="leading" secondItem="GeA-uP-7DX" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="rXP-ya-buF"/>
+                            <constraint firstAttribute="trailing" secondItem="VdU-O0-prK" secondAttribute="trailing" constant="1" id="raM-GJ-tpx"/>
                             <constraint firstItem="I1A-Pg-i0K" firstAttribute="top" secondItem="KBp-qe-YVe" secondAttribute="top" type="default" id="sae-3F-CWi"/>
                             <constraint firstItem="xrn-Qp-9wJ" firstAttribute="top" secondItem="KBp-qe-YVe" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="te2-Sv-c7V"/>
+                            <constraint firstItem="VdU-O0-prK" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="84" id="vjZ-Dk-1SS"/>
                             <constraint firstItem="6GJ-Vd-JJ6" firstAttribute="trailing" secondItem="hx3-wd-xu5" secondAttribute="trailing" type="default" id="x9h-Rd-unI"/>
+                            <constraint firstItem="VdU-O0-prK" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="201" id="xlb-up-apQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hype Swipe" image="helmet3.png" id="par-Dk-nGs"/>
                     <connections>
+                        <outlet property="greenArrow" destination="VdU-O0-prK" id="BHI-dg-jbb"/>
                         <outlet property="numberLabel" destination="GeA-uP-7DX" id="M5f-0C-eYK"/>
                         <outlet property="pageControl" destination="I1A-Pg-i0K" id="tyC-AO-das"/>
                         <outlet property="playerNameLabel" destination="KBp-qe-YVe" id="q58-oh-JEz"/>
                         <outlet property="positionLabel" destination="mdz-eS-x3G" id="1ua-Bd-Mfd"/>
+                        <outlet property="redArrow" destination="1uR-Im-1k4" id="O17-MG-szX"/>
                         <outlet property="scrollView" destination="xrn-Qp-9wJ" id="mw7-Vz-g75"/>
                         <outlet property="teamLabel" destination="vUU-M6-ljV" id="UUB-kZ-mjK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTt-ok-DvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="BxD-9Z-vza">
+                    <connections>
+                        <action selector="swipeDown:" destination="zfp-iq-o9P" id="aew-se-xje"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="twx-7p-hcn">
+                    <connections>
+                        <action selector="hypeUp:" destination="zfp-iq-o9P" id="PjK-9o-dwB"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1404" y="-238"/>
+            <point key="canvasLocation" x="1599" y="-238"/>
         </scene>
         <!--ScoreboardTVC - Scoreboard-->
         <scene sceneID="CQz-jk-zPg">
@@ -288,12 +349,48 @@
     </scenes>
     <resources>
         <image name="backgroundgradient.png" width="640" height="960"/>
+        <image name="greenarrow.png" width="3478" height="4343"/>
         <image name="helmet3.png" width="30" height="26"/>
         <image name="player_screen_0001_Layer-3-copy.png" width="531" height="324"/>
+        <image name="redarrow.png" width="3498" height="4343"/>
         <image name="scoreboardicon2.png" width="30" height="15"/>
         <image name="splash_screen_0002_Layer-5.png" width="123" height="123"/>
         <image name="topyahoobar.png" width="640" height="142"/>
     </resources>
+    <classes>
+        <class className="HypeSwipeGameVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HypeSwipeGameVC.h"/>
+            <relationships>
+                <relationship kind="action" name="hypeUp:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="swipeDown:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="greenArrow" candidateClass="UIView"/>
+                <relationship kind="outlet" name="numberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="playerNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="positionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="redArrow" candidateClass="UIView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="teamLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ScoreboardTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreboardTVC.h"/>
+        </class>
+        <class className="SplashViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="logo1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="logo2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="logo3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="logo4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="splashScreenView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="yahooLogo" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
