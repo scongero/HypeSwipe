@@ -102,7 +102,7 @@ NSMutableDictionary *playerDictionary;
         for (int i = 0; i < [[self players] count];i++)
         {
             Player *aPlayer = [[Player alloc] init];
-            [playerArray addObject:aPlayer];
+            [playerArray addObject:(Player *)aPlayer];
         }
         playerClass = playerArray;
     }
@@ -135,7 +135,7 @@ NSMutableDictionary *playerDictionary;
             currentPlayer.projectedFantasyScore = [[self projectedFantasyScores] objectAtIndex:i];
             currentPlayer.fantasyTeam = [[self fantasyTeams] objectAtIndex:i];
             
-            [tempDictionary setObject:currentPlayer forKey:[players objectAtIndex:i]];
+            [tempDictionary setObject:(Player*)currentPlayer forKey:[players objectAtIndex:i]];
         }
         playerDictionary = tempDictionary;
     }

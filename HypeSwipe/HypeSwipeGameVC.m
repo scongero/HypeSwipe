@@ -8,6 +8,7 @@
 
 #import "HypeSwipeGameVC.h"
 #import "PlayerDatabase.h"
+#import "Player.h"
 
 @interface HypeSwipeGameVC ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -57,8 +58,7 @@
 {
     [super viewDidLoad];
     
-    NSString *team = [[PlayerDatabase playerDictionary] objectForKey:@"Reggie Bush"];
-    NSLog(@"team: %@",team);
+
     
     
     
