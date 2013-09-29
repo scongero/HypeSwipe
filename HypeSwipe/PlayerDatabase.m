@@ -151,6 +151,7 @@ NSMutableDictionary *swipedPlayerDatabase;
             Player *currentPlayer = [[self playerClass] objectAtIndex:i];
             
             currentPlayer.team = [[self teams]objectAtIndex:i];
+            currentPlayer.name = [[self players]objectAtIndex:i];
             currentPlayer.number = [[self numbers]objectAtIndex:i];
             currentPlayer.position = [[self positions]objectAtIndex:i];
             currentPlayer.projectedFantasyScore = [[self projectedFantasyScores] objectAtIndex:i];
