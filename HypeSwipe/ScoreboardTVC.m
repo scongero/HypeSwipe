@@ -42,6 +42,10 @@
     self.tableView.separatorColor = [UIColor colorWithHue:.8 saturation:.5 brightness:.5 alpha:.5];
 }
 
++(NSInteger)rowPressed
+{
+    
+}
 
 #pragma mark - Table view data source
 
@@ -120,8 +124,10 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSInteger rowWasPressed = indexPath.row;
+    [self performSegueWithIdentifier:@"teamPlayersSegue" sender:self];
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -129,6 +135,8 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    return rowWasPressed;
 }
 
 @end

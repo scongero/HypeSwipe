@@ -7,6 +7,7 @@
 //
 
 #import "PlayersListTVC.h"
+#import "ScoreboardTVC.h"
 
 @interface PlayersListTVC ()
 
@@ -42,26 +43,34 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return 14;
 }
+-(NSString *)titleForRow:(NSUInteger)row
+{
+    
+}
+
+
+-(NSString *)scoreForRow:(NSUInteger)row
+{
+    // return [PlayerDatabase friendTeamScores][row];
+}
+
+
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"playerHyped";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.textLabel.text = [self titleForRow:indexPath.row];
+    cell.detailTextLabel.text = [self scoreForRow:indexPath.row];
     
     return cell;
 }
