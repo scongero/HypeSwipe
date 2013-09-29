@@ -79,11 +79,12 @@
     [self.splashScreenView addSubview:self.logo3];
     [self.splashScreenView addSubview:self.logo4];
     
-    [UIView setAnimationDidStopSelector:@selector(supernovaAnimationDidStop:finished:context:)];
+    [UIView setAnimationDidStopSelector:@selector(splashAnimationDidStop:finished:context:)];
     
     [UIView commitAnimations];
     
     [self.view addSubview:self.splashScreenView];
+    
     
     
 }
@@ -108,6 +109,6 @@
     [UIView commitAnimations];
     
     //Segue
-    //[self performSegueWithIdentifier:@"SplashScreen2LoginSegue" sender:self];
+    [self performSegueWithIdentifier:@"segue1" sender:self];
 }
 @end

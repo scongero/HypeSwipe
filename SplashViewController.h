@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *yahooLogo;
 
 - (void)splashAnimationDidStop:(NSString *)animationID finished: (NSNumber *)finished context:(void *)context;
+- (void)splashScreenViewControllerDidFinish:(UIViewController *)splashScreenViewController;
 
 
 

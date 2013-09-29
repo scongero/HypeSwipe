@@ -11,5 +11,9 @@
 @interface HypeSwipeGameVC : UIViewController  <UIScrollViewDelegate>
 
 @property (nonatomic, strong) NSArray *playerViewArray;
+@property (nonatomic) BOOL showsHorizontalScrollIndicator;
+@property(nonatomic) BOOL showsVerticalScrollIndicator;
+
+
 
 @end

@@ -11,6 +11,8 @@
 @interface HypeSwipeGameVC ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
+
 
 @end
 
@@ -31,10 +33,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    playerViewArray = [[NSArray alloc] initWithObjects:@"image1.jpg",@"image2.jpg", @"image3.jpg", nil];
-    self.scrollView = [[UIScrollView alloc] init];
-    
+    self.scrollView.delegate = self;
+    self.scrollView.frame = CGRectMake(0, 45, 320, 366);
+    playerViewArray = [[NSArray alloc] initWithObjects:@"image1.png",@"image2.png", @"image3.png", nil];
     for (int i = 0; i < [playerViewArray count]; i++)
     {
         CGRect frame;
@@ -42,9 +43,12 @@
         frame.origin.y = 0;
         frame.size = self.scrollView.frame.size;
         
-        UIImageView *photoView = [[UIImageView alloc] initWithFrame: frame];
-        photoView.image = [UIImage imageNamed:[playerViewArray objectAtIndex:i]];
-        [self.scrollView addSubview:photoView];
+        self.photoView.frame = frame;
+        self.photoView.image = [UIImage imageNamed:[playerViewArray objectAtIndex:i]];
+        [self.scrollView addSubview:self.photoView];
+        [self.scrollView setShowsHorizontalScrollIndicator:NO];
+        [self.scrollView setShowsVerticalScrollIndicator:NO];
+
     }
     
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * [playerViewArray count], scrollView.frame.size.height);
@@ -57,7 +61,8 @@
     self.pageControl.currentPage = page;
 }
     
-    
+
+
     
     
     
