@@ -39,6 +39,7 @@
 
 -(void)viewDidLayoutSubviews
 {
+    self.scrollView.frame=CGRectMake(0, 45, 320, 366);
     NSMutableDictionary *dict = [PlayerDatabase playerDictionary];
     if(self.notFirst==false)
     {
@@ -50,7 +51,6 @@
     
     for (int i = 0; i < [playerViewArray count]; i++)
     {
-        self.image = nil;
         CGRect frame;
         frame.origin.x = self.scrollView.frame.size.width *i;
         frame.origin.y = 0;
@@ -80,10 +80,7 @@
     Player *player2 = [PlayerDatabase drawNextPlayer];
     Player *player3 = [PlayerDatabase drawNextPlayer];
     
-    for (int i = 0; i < [[self.scrollView subviews] count];i++)
-    {
-        [[[self.scrollView subviews] objectAtIndex:i] removeFromSuperview];
-    }
+    
     
     [playerViewArray addObject:player1];
     [playerViewArray addObject:player2];
@@ -111,11 +108,17 @@
     
     if(self.pageControl.currentPage == 2)
     {
+        self.photoView.frame = CGRectMake(0, 45, 320, 366);
 
         playerViewArray = [self refreshPlayerList:playerViewArray];
         self.pageControl.currentPage=0;
         
-        self.scrollView.frame=CGRectMake(0, 45, 320, 366);
+        
+        
+        for (int i = 0; i < [[self.scrollView subviews] count];i++)
+        {
+            [[[self.scrollView subviews] objectAtIndex:i] removeFromSuperview];
+        }
         [self viewDidLayoutSubviews];
         
     }
