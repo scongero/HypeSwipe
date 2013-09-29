@@ -7,6 +7,7 @@
 //
 
 #import "HypeSwipeGameVC.h"
+#import "PlayerDatabase.h"
 
 @interface HypeSwipeGameVC ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -21,8 +22,10 @@
 @synthesize pageControl;
 
 
-
-
+-(NSMutableDictionary *)createDictionary
+{
+    
+}
 
 
 
@@ -30,7 +33,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    Player *player = [[Player alloc]init];
+    
+    NSMutableDictionary *dict1 = [PlayerDatabase createDictionary:dict1];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     playerViewArray = [[NSArray alloc] initWithObjects:@"image1.jpg",@"image2.jpg", @"image3.jpg", nil];
     self.scrollView = [[UIScrollView alloc] init];

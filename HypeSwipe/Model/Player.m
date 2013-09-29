@@ -8,6 +8,17 @@
 
 #import "Player.h"
 
+@interface Player()
+
+
+
+@end
+
+
 @implementation Player
+
+
+
+
 
 @end

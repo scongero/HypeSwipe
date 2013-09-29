@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PlayerDatabase.h"
 @interface HypeSwipeGameVC : UIViewController  <UIScrollViewDelegate>
 
 @property (nonatomic, strong) NSArray *playerViewArray;
+
+-(NSMutableDictionary *)createDictionary;
+
 
 @end
