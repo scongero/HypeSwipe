@@ -18,6 +18,16 @@
 -(void)addPlayer:(Player *)player toDatabase:(PlayerDatabase *)playerDatabase;
 -(Player *)drawNextPlayer;
 
-// -(NSMutableDictionary *)createDictionary:(NSMutableDictionary *)dict;
+
+//////Contents
++ (NSArray *)players;
++ (NSArray *)teams;
++ (NSArray *)numbers;
++ (NSArray *)positions;
++ (NSArray *)projectedFantasyScores;
++ (NSArray *)fantasyTeams;
++ (NSMutableArray *)playerClass;
++ (NSArray *)playerImages;
++(NSMutableDictionary *)playerDictionary;
 
 @end
