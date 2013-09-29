@@ -1,19 +1,18 @@
 //
-//  ScoreboardTVC.m
+//  PlayersListTVC.m
 //  HypeSwipe
 //
-//  Created by Spencer Congero on 9/28/13.
+//  Created by Spencer Congero on 9/29/13.
 //  Copyright (c) 2013 Aeon. All rights reserved.
 //
 
-#import "ScoreboardTVC.h"
-#import "PlayerDatabase.h"
+#import "PlayersListTVC.h"
 
-@interface ScoreboardTVC ()
+@interface PlayersListTVC ()
 
 @end
 
-@implementation ScoreboardTVC
+@implementation PlayersListTVC
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -24,8 +23,6 @@
     return self;
 }
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,46 +32,36 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    UIImage *background = [UIImage imageNamed:@"scoreboard_background.png"];
-    
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:background];
-    self.tableView.separatorColor = [UIColor colorWithHue:.8 saturation:.5 brightness:.5 alpha:.5];
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    NSInteger numberOfRows = [[PlayerDatabase friendTeams] count];
-    
-    return numberOfRows;
+    return 0;
 }
-
--(NSString *)titleForRow:(NSUInteger)row
-{
-    NSString *rankAndTeam = [NSString stringWithFormat:@"%@. %@", [PlayerDatabase teamRanks][row], [PlayerDatabase friendTeams][row]];
-    
-    return rankAndTeam;
-    
-}
-
-
--(NSString *)scoreForRow:(NSUInteger)row
-{
-    return [PlayerDatabase friendTeamScores][row];
-}
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Rank Team Score";
+    static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self titleForRow:indexPath.row];
-    cell.detailTextLabel.text = [self scoreForRow:indexPath.row];
+    // Configure the cell...
     
     return cell;
 }
