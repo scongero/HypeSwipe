@@ -4,7 +4,7 @@
 //
 //  Created by Rahul Madduluri on 9/28/13.
 //  Copyright (c) 2013 Aeon. All rights reserved.
-//
+////
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *yahooLogo;
 
 - (void)splashAnimationDidStop:(NSString *)animationID finished: (NSNumber *)finished context:(void *)context;
+- (void)splashScreenViewControllerDidFinish:(UIViewController *)splashScreenViewController;
 
 
 

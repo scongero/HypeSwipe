@@ -23,6 +23,8 @@
     return self;
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,13 +34,13 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIImage *background = [UIImage imageNamed:@"scoreboard_background.png"];
+    
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:background];
+    self.tableView.separatorColor = [UIColor colorWithHue:.8 saturation:.5 brightness:.5 alpha:.5];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 

@@ -12,6 +12,8 @@
 @interface HypeSwipeGameVC ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
+
 
 @end
 
@@ -58,9 +60,12 @@
         frame.origin.y = 0;
         frame.size = self.scrollView.frame.size;
         
-        UIImageView *photoView = [[UIImageView alloc] initWithFrame: frame];
-        photoView.image = [UIImage imageNamed:[playerViewArray objectAtIndex:i]];
-        [self.scrollView addSubview:photoView];
+        self.photoView.frame = frame;
+        self.photoView.image = [UIImage imageNamed:[playerViewArray objectAtIndex:i]];
+        [self.scrollView addSubview:self.photoView];
+        [self.scrollView setShowsHorizontalScrollIndicator:NO];
+        [self.scrollView setShowsVerticalScrollIndicator:NO];
+
     }
     
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * [playerViewArray count], scrollView.frame.size.height);
@@ -73,7 +78,8 @@
     self.pageControl.currentPage = page;
 }
     
-    
+
+
     
     
     
