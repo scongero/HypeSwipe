@@ -33,7 +33,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.scrollView.delegate = self;
     self.scrollView.frame = CGRectMake(0, 45, 320, 366);
     playerViewArray = [[NSArray alloc] initWithObjects:@"image1.png",@"image2.png", @"image3.png", nil];
     for (int i = 0; i < [playerViewArray count]; i++)

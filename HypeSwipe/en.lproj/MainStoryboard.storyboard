@@ -123,6 +123,9 @@
                                     <constraint firstItem="WCQ-IF-89i" firstAttribute="top" secondItem="xrn-Qp-9wJ" secondAttribute="top" type="default" id="qbE-gG-EUM"/>
                                     <constraint firstItem="WCQ-IF-89i" firstAttribute="leading" secondItem="xrn-Qp-9wJ" secondAttribute="leading" type="default" id="tAp-OO-rQD"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="zfp-iq-o9P" id="cJd-Ek-zIX"/>
+                                </connections>
                             </scrollView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-qe-YVe">
                                 <constraints>
