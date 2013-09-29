@@ -7,6 +7,7 @@
 //
 
 #import "ScoreboardTVC.h"
+#import "PlayerDatabase.h"
 
 @interface ScoreboardTVC ()
 
