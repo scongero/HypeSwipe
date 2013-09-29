@@ -58,7 +58,7 @@
 {
     [super viewDidLoad];
     
-    //Player *player = [[Player alloc]init];
+
     
     //NSMutableDictionary *dict1 = [PlayerDatabase createDictionary:dict1];
     
