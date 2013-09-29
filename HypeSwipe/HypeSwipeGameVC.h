@@ -10,7 +10,7 @@
 #import "PlayerDatabase.h"
 @interface HypeSwipeGameVC : UIViewController  <UIScrollViewDelegate>
 
-@property (nonatomic, strong) NSArray *playerViewArray;
+@property (nonatomic, strong) NSMutableArray *playerViewArray;
 @property (nonatomic) BOOL showsHorizontalScrollIndicator;
 @property(nonatomic) BOOL showsVerticalScrollIndicator;
 

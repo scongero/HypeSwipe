@@ -12,7 +12,6 @@
 
 
 
-
 @end
 
 @implementation PlayerDatabase
@@ -28,6 +27,8 @@ NSMutableArray *playerClass;
 
 //Dictionary
 NSMutableDictionary *playerDictionary;
+NSMutableDictionary *unswipedPlayerDatabase;
+NSMutableDictionary *swipedPlayerDatabase;
 
 
 -(void)addPlayer:(Player *)player toDatabase:(PlayerDatabase *)playerDatabase
@@ -35,8 +36,28 @@ NSMutableDictionary *playerDictionary;
     
 }
 
--(Player *)drawNextPlayer
++(Player *)drawNextPlayer
 {
+    int count =0;
+    for (Player *player in [PlayerDatabase playerClass])
+    {
+        if (player.hyped)
+        {
+            [swipedPlayerDatabase setObject:player forKey:player.name];
+        }
+        else
+        {
+            [unswipedPlayerDatabase setObject:player forKey:player.name];
+            count++;
+            return player;
+
+        }
+    }
+    if (count==0)
+    {
+        NSLog(@"All players swiped");
+    }
+    return nil;
 }
 
 + (NSArray *)players
@@ -133,6 +154,7 @@ NSMutableDictionary *playerDictionary;
             currentPlayer.number = [[self numbers]objectAtIndex:i];
             currentPlayer.position = [[self positions]objectAtIndex:i];
             currentPlayer.projectedFantasyScore = [[self projectedFantasyScores] objectAtIndex:i];
+            currentPlayer.playerImage = [[self playerImages] objectAtIndex:i];
             currentPlayer.fantasyTeam = [[self fantasyTeams] objectAtIndex:i];
             
             [tempDictionary setObject:(Player*)currentPlayer forKey:[players objectAtIndex:i]];
@@ -142,6 +164,14 @@ NSMutableDictionary *playerDictionary;
     
     
     return playerDictionary;
+}
++(NSMutableDictionary *)unswipedPlayerDatabase
+{
+    return unswipedPlayerDatabase;
+}
++(NSMutableDictionary *)swipedPlayerDatabase
+{
+    return swipedPlayerDatabase;
 }
 
 

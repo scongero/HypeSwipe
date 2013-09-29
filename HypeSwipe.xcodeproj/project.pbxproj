@@ -56,6 +56,7 @@
 		B71F8A9917F84DE300F6BDC6 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F8A9817F84DE300F6BDC6 /* image1.png */; };
 		B71F8A9B17F84DE900F6BDC6 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F8A9A17F84DE900F6BDC6 /* image2.png */; };
 		B71F8A9D17F84DEE00F6BDC6 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F8A9C17F84DEE00F6BDC6 /* image3.png */; };
+		B71F8AA317F8843C00F6BDC6 /* Player Images in Resources */ = {isa = PBXBuildFile; fileRef = B71F8AA217F8843C00F6BDC6 /* Player Images */; };
 		B7C8C6D117F77AEB003B0FA1 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C8C6D017F77AEB003B0FA1 /* SplashViewController.m */; };
 		B7C8C6D317F77B61003B0FA1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C8C6D217F77B61003B0FA1 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -121,6 +122,7 @@
 		B71F8A9817F84DE300F6BDC6 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image1.png; path = ../../../../../Downloads/image1.png; sourceTree = "<group>"; };
 		B71F8A9A17F84DE900F6BDC6 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image2.png; path = ../../../../../Downloads/image2.png; sourceTree = "<group>"; };
 		B71F8A9C17F84DEE00F6BDC6 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image3.png; path = ../../../../../Downloads/image3.png; sourceTree = "<group>"; };
+		B71F8AA217F8843C00F6BDC6 /* Player Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Player Images"; sourceTree = "<group>"; };
 		B7C8C6CF17F77AEB003B0FA1 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = ../SplashViewController.h; sourceTree = "<group>"; };
 		B7C8C6D017F77AEB003B0FA1 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = ../SplashViewController.m; sourceTree = "<group>"; };
 		B7C8C6D217F77B61003B0FA1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -186,6 +188,50 @@
 		A1D3B4A017F74E9C007E96E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B71F8AA217F8843C00F6BDC6 /* Player Images */,
+				B71F8A9E17F8683B00F6BDC6 /* HypeImages */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D3B4BF17F7508E007E96E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1D3B4BC17F75072007E96E7 /* Player.h */,
+				A1D3B4BD17F75072007E96E7 /* Player.m */,
+				A1D3B4C017F750C4007E96E7 /* PlayerDatabase.h */,
+				A1D3B4C117F750C4007E96E7 /* PlayerDatabase.m */,
+				A1D3B4C317F750DF007E96E7 /* HypeSwipeGame.h */,
+				A1D3B4C417F750DF007E96E7 /* HypeSwipeGame.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1D3B4D217F75C0E007E96E7 /* Scoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				A1D3B4CF17F75C03007E96E7 /* ScoreboardTVC.h */,
+				A1D3B4D017F75C03007E96E7 /* ScoreboardTVC.m */,
+			);
+			name = Scoreboard;
+			sourceTree = "<group>";
+		};
+		A1D3B4D317F75C21007E96E7 /* HypeSwipeGame */ = {
+			isa = PBXGroup;
+			children = (
+				A1D3B4C917F75177007E96E7 /* HypeSwipeGameView.h */,
+				A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */,
+				A1D3B4CC17F751A6007E96E7 /* HypeSwipeGameVC.h */,
+				A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */,
+				A1D3B4C617F7511C007E96E7 /* PlayerView.h */,
+				A1D3B4C717F7511C007E96E7 /* PlayerView.m */,
+			);
+			name = HypeSwipeGame;
+			sourceTree = "<group>";
+		};
+		B71F8A9E17F8683B00F6BDC6 /* HypeImages */ = {
+			isa = PBXGroup;
+			children = (
 				B71F8A5E17F8423800F6BDC6 /* backgroundgradient.png */,
 				B71F8A9817F84DE300F6BDC6 /* image1.png */,
 				B71F8A9A17F84DE900F6BDC6 /* image2.png */,
@@ -227,43 +273,16 @@
 				A1D3B4AB17F74E9C007E96E7 /* Default.png */,
 				A1D3B4AD17F74E9C007E96E7 /* Default@2x.png */,
 				A1D3B4AF17F74E9C007E96E7 /* Default-568h@2x.png */,
+				B71F8AA117F868DE00F6BDC6 /* New Group */,
 			);
-			name = "Supporting Files";
+			name = HypeImages;
 			sourceTree = "<group>";
 		};
-		A1D3B4BF17F7508E007E96E7 /* Model */ = {
+		B71F8AA117F868DE00F6BDC6 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				A1D3B4BC17F75072007E96E7 /* Player.h */,
-				A1D3B4BD17F75072007E96E7 /* Player.m */,
-				A1D3B4C017F750C4007E96E7 /* PlayerDatabase.h */,
-				A1D3B4C117F750C4007E96E7 /* PlayerDatabase.m */,
-				A1D3B4C317F750DF007E96E7 /* HypeSwipeGame.h */,
-				A1D3B4C417F750DF007E96E7 /* HypeSwipeGame.m */,
 			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A1D3B4D217F75C0E007E96E7 /* Scoreboard */ = {
-			isa = PBXGroup;
-			children = (
-				A1D3B4CF17F75C03007E96E7 /* ScoreboardTVC.h */,
-				A1D3B4D017F75C03007E96E7 /* ScoreboardTVC.m */,
-			);
-			name = Scoreboard;
-			sourceTree = "<group>";
-		};
-		A1D3B4D317F75C21007E96E7 /* HypeSwipeGame */ = {
-			isa = PBXGroup;
-			children = (
-				A1D3B4C917F75177007E96E7 /* HypeSwipeGameView.h */,
-				A1D3B4CA17F75177007E96E7 /* HypeSwipeGameView.m */,
-				A1D3B4CC17F751A6007E96E7 /* HypeSwipeGameVC.h */,
-				A1D3B4CD17F751A7007E96E7 /* HypeSwipeGameVC.m */,
-				A1D3B4C617F7511C007E96E7 /* PlayerView.h */,
-				A1D3B4C717F7511C007E96E7 /* PlayerView.m */,
-			);
-			name = HypeSwipeGame;
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +374,7 @@
 				B71F8A9917F84DE300F6BDC6 /* image1.png in Resources */,
 				B71F8A9B17F84DE900F6BDC6 /* image2.png in Resources */,
 				B71F8A9D17F84DEE00F6BDC6 /* image3.png in Resources */,
+				B71F8AA317F8843C00F6BDC6 /* Player Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

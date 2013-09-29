@@ -12,11 +12,9 @@
 @interface PlayerDatabase : NSObject
 
 
-@property (strong, nonatomic) NSMutableArray *unswipedPlayerDatabase;
-@property (strong, nonatomic) NSMutableArray *swipedPlayerDatabase;
 
 -(void)addPlayer:(Player *)player toDatabase:(PlayerDatabase *)playerDatabase;
--(Player *)drawNextPlayer;
++(Player *)drawNextPlayer;
 
 
 //////Contents
@@ -29,5 +27,8 @@
 + (NSMutableArray *)playerClass;
 + (NSArray *)playerImages;
 +(NSMutableDictionary *)playerDictionary;
++(NSMutableDictionary *)unswipedPlayerDatabase;
++(NSMutableDictionary *)swipedPlayerDatabase;
+
 
 @end
