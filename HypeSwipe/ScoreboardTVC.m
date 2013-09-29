@@ -7,6 +7,7 @@
 //
 
 #import "ScoreboardTVC.h"
+#import "PlayerDatabase.h"
 
 @interface ScoreboardTVC ()
 
@@ -54,21 +55,18 @@
 
 -(NSString *)titleForRow:(NSUInteger)row
 {
-    // NSString *rankAndTeam = [NSString stringWithFormat:"%@. %@", friendRanks[row], friendTeams[row]];
+    NSString *rankAndTeam = [NSString stringWithFormat:@"%@. %@", [PlayerDatabase teamRanks][row], [PlayerDatabase friendTeams][row]];
     
-            // need to sort and order ranks and teams
-    
-    // return rankAndTeam;
+    return rankAndTeam;
     
 }
 
 
 -(NSString *)scoreForRow:(NSUInteger)row
 {
-    // return friendScores[row];
-    
-            // need to sort and order scores
+    return [PlayerDatabase friendTeamScores][row];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

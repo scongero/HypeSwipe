@@ -23,6 +23,9 @@ NSArray *positions;
 NSArray *projectedFantasyScores;
 NSArray *fantasyTeams;
 NSArray *playerImages;
+NSArray *teamRanks;
+NSArray *friendTeams;
+NSArray *friendTeamScores;
 NSMutableArray *playerClass;
 
 //Dictionary
@@ -135,10 +138,38 @@ NSMutableDictionary *swipedPlayerDatabase;
 {
     if (!playerImages)
     {
-        playerImages = @[];
+        playerImages = @[@"Peyton.png", @"CJ.png", @"Bush.png", @"Green.png", @"Brown1.png", @"Myers.png", @"Sproles.png", @"Stafford.png", @"Franklin.png", @"Ingram.png", @"Austin1.png", @"Shorts.png", @"Gronkowski.png", @"Walsh.png", @"Luck.png", @"Rice.png", @"Hillman.png", @"Fitzgerald.png", @"Wallace.png", @"Gates.png", @"Smith1.png", @"Dalton.png", @"Bradshaw.png", @"Brown2.png", @"Jackson1.png", @"Lacy.png", @"Pierce.png", @"Zuerlein.png", @"Kaepernick.png", @"Snelling.png", @"Morris.png", @"Johnson1.png", @"Moore.png", @"Graham.png", @"Bernard.png", @"Rivers.png", @"Miller.png", @"Moreno.png", @"Nelson.png", @"Nicks.png", @"Williams.png", @"Janikowski.png", @"Wilson1.png", @"Ridley.png", @"Lynch.png", @"Jones.png", @"Wayne.png", @"Witten.png", @"Gore.png", @"Manning.png", @"Green-Ellis.png", @"McGahee.png", @"Starks.png", @"Austin2.png", @"Harline.png", @"Bryant1.png", @"Pryor.png", @"Foster.png", @"Murray.png", @"Thomas.png", @"Jackson2.png", @"Bennett.png", @"F_Jackson.png", @"Cutler.png", @"Rodgers.png", @"Mendenhall.png", @"James Jones.png", @"Sidney Rice.png", @"Kyle Rudolph.png", @"Prater.png", @"Brees.png", @"McFadden.png", @"Peterson.png", @"Royal.png", @"Marshall.png", @"Cameron.png", @"Colston.png", @"Williams.png", @"Woodhead.png", @"Jeffery.png", @"Jennings.png", @"Smith.png", @"Olsen.png", @"Gostkowski.png", @"Ryan.png", @"Bell.png", @"Powell.png", @"Johnson2.png", @"Hopkins.png", @"Miller.png", @"Boldin.png", @"Flacco.png", @"Vereen.png", @"White.png", @"Wright.png", @"Gonzalez.png", @"Dawson.png", @"Brady.png", @"Johnson3.png", @"McCoy.png", @"Garcon.png", @"Cruz.png", @"Davis.png", @"Jackson3.png", @"Smith2.png", @"Vick.png", @"Matthews.png", @"Harvin.png", @"Holmes.png", @"Daniels.png", @"Henery.png", @"GriffinIII.png", @"Jones-Drew.png", @"Matin.png", @"Bryant2.png", @"Welker.png", @"Fleener.png", @"Decker.png", @"Newton.png", @"Bell.png", @"Amendola.png", @"Blackmon.png", @"Edelman.png", @"Finley.png", @"Tucker.png", @"Romo.png", @"Forte.png", @"Charles.png", @"Johnson4.png", @"Gordon.png", @"Thomas.png", @"Richardson.png", @"Tate.png", @"Wilson2.png", @"Bowe.png", @"Cobb.png", @"Hilton.png", @"Cook.png", @"Bailey"];
     }
     return playerImages;
 }
+
++ (NSArray *)teamRanks
+{
+    if (!teamRanks)
+    {
+        teamRanks = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10"];
+    }
+    return teamRanks;
+}
+
++ (NSArray *)friendTeams
+{
+    if (!friendTeams)
+    {
+        friendTeams = @[@"You emBoldin Me", @"Not2Schaubby", @"Geno 911!", @"MatStafordInfection", @"I Pitta The Fool", @"My Vick In A Box", @"Free Hernandez", @"Football is my Forte", @"WhatWould Jones-Drew?", @"Landry Day"];
+    }
+    return friendTeams;
+}
+
++ (NSArray *)friendTeamScores
+{
+    if (!friendTeamScores)
+    {
+        friendTeamScores = @[@"134", @"105", @"99", @"76", @"63", @"61", @"48", @"40", @"27", @"12"];
+    }
+    return friendTeamScores;
+}
+
 
 +(NSMutableDictionary *)playerDictionary
 {
