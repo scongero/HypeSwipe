@@ -7,67 +7,105 @@
 //
 
 #import "PlayerDatabase.h"
+#import "Player.h"
 @interface PlayerDatabase()
 
-@property (strong, nonatomic) NSArray *players;
-@property (strong, nonatomic) NSArray *teams;
-@property (strong, nonatomic) NSArray *numbers;
-@property (strong, nonatomic) NSArray *positions;
-@property (strong, nonatomic) NSArray *projectedFantasyScores;
-@property (strong, nonatomic) NSArray *fantasyTeams;
-@property (strong, nonatomic) NSArray *playerClass;
+
+
 
 @end
 
 @implementation PlayerDatabase
+
+NSArray *players;
+NSArray *teams;
+NSArray *numbers;
+NSArray *positions;
+NSArray *projectedFantasyScores;
+NSArray *fantasyTeams;
+NSArray *playerImages;
+NSMutableArray *playerClass;
+
+//Dictionary
+NSMutableDictionary *playerDictionary;
+
 
 -(void)addPlayer:(Player *)player toDatabase:(PlayerDatabase *)playerDatabase
 {
     
 }
 
+-(Player *)drawNextPlayer
+{
+}
+
 + (NSArray *)players
 {
-    return @[@"Peyton Manning", @"C.J. Spiller", @"Reggie Bush", @"A.J. Green"];
+    if (!players)
+    {
+        players = @[@"Peyton Manning", @"C.J. Spiller", @"Reggie Bush", @"A.J. Green"];
+    }
+    return players;
 }
 
 
 + (NSArray *)teams
 {
-    return @[@"DEN", @"BUF", @"DET", @"CIN"];
+    if(!teams)
+    {
+        teams = @[@"DEN", @"BUF", @"DET", @"CIN"];
+    }
+    return teams;
 }
 
 + (NSArray *)numbers
 {
-    return @[@"18", @"28", @"21", @"18"];
+    if (!numbers)
+    {
+        numbers =  @[@"18", @"28", @"21", @"18"];
+    }
+    return numbers;
 }
 
 + (NSArray *)positions
 {
-    return @[@"QB", @"RB", @"RB", @"WR"];
+    if (!positions)
+    {
+        positions = @[@"QB", @"RB", @"RB", @"WR"];
+    }
+    return positions;
 }
 
 + (NSArray *)projectedFantasyScores
 {
-    return @[@"27.72", @"19.50", @"10.20", @"23.30"];
+    if (!projectedFantasyScores)
+    {
+        projectedFantasyScores = @[@"27.72", @"19.50", @"10.20", @"23.30"];
+    }
+    return projectedFantasyScores;
 }
 
 + (NSArray *)fantasyTeams
 {
-    return @[@"Team1", @"Team1", @"Team1", @"Team1"];
+    if (!fantasyTeams)
+    {
+        fantasyTeams = @[@"Team1", @"Team1", @"Team1", @"Team1"];
+    }
+    return fantasyTeams;
 }
 
 + (NSMutableArray *)playerClass
 {
-    Player *player1 = [[Player alloc] init];
-    Player *player2 = [[Player alloc] init];
-    Player *player3 = [[Player alloc] init];
-    Player *player4 = [[Player alloc] init];
-    
-    
-    
-    NSMutableArray *playerClass = [[NSMutableArray alloc]init];
-    playerClass = [NSMutableArray arrayWithObjects:(Player *)player1, (Player *)player2, (Player *)player3, (Player *)player4, nil];
+    if (!playerClass)
+    {
+        NSMutableArray *playerArray = [[NSMutableArray alloc]init];
+        for (int i = 0; i < [[self players] count];i++)
+        {
+            Player *aPlayer = [[Player alloc] init];
+            [playerArray addObject:(Player *)aPlayer];
+        }
+        playerClass = playerArray;
+    }
     
     return playerClass;
 }
@@ -75,27 +113,27 @@
 /*
 - (id)init
 {
-    self = [super init];
-    
-    if (self)
+    if(!playerDictionary)
     {
+        NSMutableDictionary *tempDictionary = [[NSMutableDictionary alloc] init];
+
         for (int i = 0; i < [[self players] count]; i++)
         {
+            Player *currentPlayer = [[self playerClass] objectAtIndex:i];
             
+            currentPlayer.team = [[self teams]objectAtIndex:i];
+            currentPlayer.number = [[self numbers]objectAtIndex:i];
+            currentPlayer.position = [[self positions]objectAtIndex:i];
+            currentPlayer.projectedFantasyScore = [[self projectedFantasyScores] objectAtIndex:i];
+            currentPlayer.fantasyTeam = [[self fantasyTeams] objectAtIndex:i];
             
-            Player *currentPlayer = [self.playerClass objectAtIndex:i];
-            
-            currentPlayer.team = self.teams[i];
-            currentPlayer.number = self.numbers[i];
-            currentPlayer.position = self.positions[i];
-            currentPlayer.projectedFantasyScore = self.projectedFantasyScores[i];
-            currentPlayer.fantasyTeam = self.fantasyTeams[i];
-            
-            NSMutableDictionary *dict = [NSMutableDictionary setObject:currentPlayer forKey:self.players[i]];
+            [tempDictionary setObject:(Player*)currentPlayer forKey:[players objectAtIndex:i]];
         }
-        
+        playerDictionary = tempDictionary;
     }
-    return dict;
+    
+    
+    return playerDictionary;
 }
 */
 /*

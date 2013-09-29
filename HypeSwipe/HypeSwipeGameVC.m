@@ -8,11 +8,16 @@
 
 #import "HypeSwipeGameVC.h"
 #import "PlayerDatabase.h"
+#import "Player.h"
 
 @interface HypeSwipeGameVC ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
+
+//Player Dictionary
+@property (strong,nonatomic) PlayerDatabase *playerDatabase;
+@property (strong,nonatomic) NSMutableDictionary *dictionaryOfPlayers;
 
 @end
 
@@ -23,9 +28,27 @@
 @synthesize pageControl;
 
 
--(NSMutableDictionary *)createDictionary
+-(void)viewDidLayoutSubviews
 {
+    playerViewArray = [[NSArray alloc] initWithObjects:@"image1.png",@"image2.png", @"image3.png", nil];
     
+    
+    for (int i = 0; i < [playerViewArray count]; i++)
+    {
+        CGRect frame;
+        frame.origin.x = self.scrollView.frame.size.width *i;
+        frame.origin.y = 0;
+        frame.size = self.scrollView.frame.size;
+        
+        UIImageView *photoView = [[UIImageView alloc] initWithFrame:frame];
+        photoView.image = [UIImage imageNamed:[playerViewArray objectAtIndex:i]];
+        [self.scrollView addSubview:photoView];
+        [self.scrollView setShowsHorizontalScrollIndicator:NO];
+        [self.scrollView setShowsVerticalScrollIndicator:NO];
+        
+    }
+    
+    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * [playerViewArray count], scrollView.frame.size.height);
 }
 
 

@@ -240,7 +240,7 @@
         <image name="backgroundgradient.png" width="640" height="960"/>
         <image name="helmet3.png" width="30" height="26"/>
         <image name="player_screen_0001_Layer-3-copy.png" width="531" height="324"/>
-        <image name="scoreboardicon2.png" width="30" height="15"/>
+        <image name="scoreboardicon2.png" width="16" height="16"/>
         <image name="splash_screen_0002_Layer-5.png" width="123" height="123"/>
         <image name="topyahoobar.png" width="640" height="142"/>
     </resources>
