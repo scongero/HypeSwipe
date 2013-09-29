@@ -33,6 +33,8 @@ NSMutableDictionary *playerDictionary;
 NSMutableDictionary *unswipedPlayerDatabase;
 NSMutableDictionary *swipedPlayerDatabase;
 
+int anIndex;
+
 
 -(void)addPlayer:(Player *)player toDatabase:(PlayerDatabase *)playerDatabase
 {
@@ -41,24 +43,17 @@ NSMutableDictionary *swipedPlayerDatabase;
 
 +(Player *)drawNextPlayer
 {
-    int count =0;
-    for (Player *player in [PlayerDatabase playerClass])
+    int random = rand()%[players count];
+    Player *player = [[PlayerDatabase playerClass]objectAtIndex:random];
+    if (player.hyped)
     {
-        if (player.hyped)
-        {
-            [swipedPlayerDatabase setObject:player forKey:player.name];
-        }
-        else
-        {
-            [unswipedPlayerDatabase setObject:player forKey:player.name];
-            count++;
-            return player;
-
-        }
+        [swipedPlayerDatabase setObject:player forKey:player.name];
     }
-    if (count==0)
+    else
     {
-        NSLog(@"All players swiped");
+        [unswipedPlayerDatabase setObject:player forKey:player.name];
+        return player;
+
     }
     return nil;
 }

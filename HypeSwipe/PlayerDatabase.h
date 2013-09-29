@@ -17,6 +17,7 @@
 +(Player *)drawNextPlayer;
 
 
+
 //////Contents
 + (NSArray *)players;
 + (NSArray *)teams;

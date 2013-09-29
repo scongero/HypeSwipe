@@ -19,6 +19,14 @@
 @property (strong,nonatomic) PlayerDatabase *playerDatabase;
 @property (strong,nonatomic) NSMutableDictionary *dictionaryOfPlayers;
 
+
+@property (nonatomic,strong) UIImageView *photoView;
+@property (nonatomic,strong) UIImage *image;
+
+
+@property (nonatomic)BOOL notFirst;
+@property (nonatomic) CGRect rect;
+
 @end
 
 @implementation HypeSwipeGameVC
@@ -28,14 +36,18 @@
 @synthesize pageControl;
 
 
+
 -(void)viewDidLayoutSubviews
 {
+    self.scrollView.frame=CGRectMake(0, 45, 320, 366);
     NSMutableDictionary *dict = [PlayerDatabase playerDictionary];
-    
-    Player *player1 = [[PlayerDatabase playerClass]objectAtIndex:0];
-    Player *player2 = [[PlayerDatabase playerClass]objectAtIndex:1];
-    Player *player3 = [[PlayerDatabase playerClass]objectAtIndex:2];
-    playerViewArray = [[NSMutableArray alloc] initWithObjects:player1,player2,player3, nil];
+    if(self.notFirst==false)
+    {
+        Player *player1 = [PlayerDatabase drawNextPlayer];
+        Player *player2 = [PlayerDatabase drawNextPlayer];
+        Player *player3 = [PlayerDatabase drawNextPlayer];
+        playerViewArray = [[NSMutableArray alloc] initWithObjects:player1,player2,player3, nil];
+    }
     
     for (int i = 0; i < [playerViewArray count]; i++)
     {
@@ -44,31 +56,39 @@
         frame.origin.y = 0;
         frame.size = self.scrollView.frame.size;
         
-        UIImageView *photoView = [[UIImageView alloc] initWithFrame:frame];
+        self.photoView = [[UIImageView alloc] initWithFrame:frame];
         Player *player = [playerViewArray objectAtIndex:i];
-        UIImage *image = player.playerImage;
-        NSLog(@"image: %@",[image description]);
-        photoView.image = image;
-        [self.scrollView addSubview:photoView];
+        self.image = player.playerImage;
+        NSLog(@"image: %@",[self.image description]);
+        self.photoView.image = [UIImage imageNamed:[player.playerImage description]];
+        [self.scrollView addSubview:self.photoView];
         [self.scrollView setShowsHorizontalScrollIndicator:NO];
         [self.scrollView setShowsVerticalScrollIndicator:NO];
         
-        if(i==2)
-        {
-            playerViewArray=nil;
-            Player *player1 = [PlayerDatabase drawNextPlayer];
-            Player *player2 = [PlayerDatabase drawNextPlayer];
-            Player *player3 = [PlayerDatabase drawNextPlayer];
-            [playerViewArray addObject:player1];
-            [playerViewArray addObject:player2];
-            [playerViewArray addObject:player3];
-        }
+                
         
     }
     
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * [playerViewArray count], scrollView.frame.size.height);
 }
 
+-(NSMutableArray*)refreshPlayerList:(NSMutableArray *)aPlayerArray
+{
+    
+    
+    Player *player1 = [aPlayerArray lastObject];
+    Player *player2 = [PlayerDatabase drawNextPlayer];
+    Player *player3 = [PlayerDatabase drawNextPlayer];
+    
+    
+    
+    [playerViewArray addObject:player1];
+    [playerViewArray addObject:player2];
+    [playerViewArray addObject:player3];
+    
+    return playerViewArray;
+
+}
 
 
 
@@ -80,9 +100,30 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)sender
 {
+    
+    
     CGFloat pageWidth = self.scrollView.frame.size.width;
     int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) +1;
     self.pageControl.currentPage = page;
+    
+    if(self.pageControl.currentPage == 2)
+    {
+        self.photoView.frame = CGRectMake(0, 45, 320, 366);
+
+        playerViewArray = [self refreshPlayerList:playerViewArray];
+        self.pageControl.currentPage=0;
+        
+        
+        
+        for (int i = 0; i < [[self.scrollView subviews] count];i++)
+        {
+            [[[self.scrollView subviews] objectAtIndex:i] removeFromSuperview];
+        }
+        [self viewDidLayoutSubviews];
+        
+    }
+    
+
 
 }
 
