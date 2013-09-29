@@ -72,7 +72,7 @@
     return playerClass;
 }
 
-
+/*
 - (id)init
 {
     self = [super init];
@@ -97,7 +97,7 @@
     }
     return dict;
 }
-
+*/
 /*
 -(NSMutableDictionary *)createDictionary:(NSMutableDictionary *)dict
 {
