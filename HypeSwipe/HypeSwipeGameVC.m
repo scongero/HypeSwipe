@@ -13,6 +13,10 @@
 @interface HypeSwipeGameVC ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UILabel *teamLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *positionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *playerNameLabel;
 
 
 //Player Dictionary
@@ -36,6 +40,28 @@
 @synthesize pageControl;
 
 
+-(void)setTeamLabel:(UILabel *)teamLabel usingPlayer:(Player *)player
+{
+    
+    self.teamLabel.text = player.team;
+}
+
+
+-(void)setNumberLabel:(UILabel *)numberLabel usingPlayer:(Player *)player
+{
+    
+    self.numberLabel.text = player.team;
+}
+-(void)setPositionLabel:(UILabel *)positionLabel usingPlayer:(Player *)player
+{
+    
+    self.positionLabel.text = player.team;
+}
+-(void)setPlayerNameLabel:(UILabel *)playerNameLabel usingPlayer:(Player *)player
+{
+    
+    self.playerNameLabel.text = player.team;
+}
 
 -(void)viewDidLayoutSubviews
 {
