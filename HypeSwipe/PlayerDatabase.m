@@ -165,6 +165,12 @@ int anIndex;
     return friendTeamScores;
 }
 
++ (NSArray *)team1Players
+{
+    return @[@"Peyton Manning", @"C.J. Spiller", @"Reggie Bush", @"A.J. Green", @"Antonio Brown", @"Brandon Myers", @"Darren Sproles", @"Matthew Stafford", @"Johnathan Franklin", @"Mark Ingram", @"Tavon Austin", @"Cecil Shorts", @"Rob Gronkowski", @"Blair Walsh"];
+}
+
+
 
 +(NSMutableDictionary *)playerDictionary
 {

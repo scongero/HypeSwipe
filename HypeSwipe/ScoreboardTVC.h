@@ -16,4 +16,7 @@
 @property (strong, nonatomic) NSMutableArray *friendRanks;
 @property (strong, nonatomic) NSMutableArray *friendScores;
 
+
++(NSInteger)rowPressed;
+
 @end

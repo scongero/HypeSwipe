@@ -1,19 +1,19 @@
 //
-//  ScoreboardTVC.m
+//  PlayersListTVC.m
 //  HypeSwipe
 //
-//  Created by Spencer Congero on 9/28/13.
+//  Created by Spencer Congero on 9/29/13.
 //  Copyright (c) 2013 Aeon. All rights reserved.
 //
 
+#import "PlayersListTVC.h"
 #import "ScoreboardTVC.h"
-#import "PlayerDatabase.h"
 
-@interface ScoreboardTVC ()
+@interface PlayersListTVC ()
 
 @end
 
-@implementation ScoreboardTVC
+@implementation PlayersListTVC
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -24,8 +24,6 @@
     return self;
 }
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,46 +33,40 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    UIImage *background = [UIImage imageNamed:@"scoreboard_background.png"];
-    
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:background];
-    self.tableView.separatorColor = [UIColor colorWithHue:.8 saturation:.5 brightness:.5 alpha:.5];
 }
 
-+(NSInteger)rowPressed
+- (void)didReceiveMemoryWarning
 {
-    
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
-    NSInteger numberOfRows = [[PlayerDatabase friendTeams] count];
-    
-    return numberOfRows;
-}
 
+    // Return the number of rows in the section.
+    return 14;
+}
 -(NSString *)titleForRow:(NSUInteger)row
 {
-    NSString *rankAndTeam = [NSString stringWithFormat:@"%@. %@", [PlayerDatabase teamRanks][row], [PlayerDatabase friendTeams][row]];
-    
-    return rankAndTeam;
     
 }
 
 
 -(NSString *)scoreForRow:(NSUInteger)row
 {
-    return [PlayerDatabase friendTeamScores][row];
+    // return [PlayerDatabase friendTeamScores][row];
 }
+
+
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Rank Team Score";
+    static NSString *CellIdentifier = @"playerHyped";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     cell.textLabel.text = [self titleForRow:indexPath.row];
@@ -124,10 +116,8 @@
 
 #pragma mark - Table view delegate
 
-- (NSInteger)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger rowWasPressed = indexPath.row;
-    [self performSegueWithIdentifier:@"teamPlayersSegue" sender:self];
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -135,8 +125,6 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    
-    return rowWasPressed;
 }
 
 @end
