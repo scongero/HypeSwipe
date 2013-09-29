@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Cjt-gm-1y1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ArW-9r-jlj">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -13,7 +14,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="player_screen_0002_Layer-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="xaQ-EB-Sby"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundgradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="xaQ-EB-Sby"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="splash_screen_0002_Layer-5.png" translatesAutoresizingMaskIntoConstraints="NO" id="4z0-2I-d0Q">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="V4J-8L-LoV"/>
@@ -85,64 +86,188 @@
             </objects>
             <point key="canvasLocation" x="554" y="42"/>
         </scene>
-        <!--View Controller - Item 2-->
-        <scene sceneID="5d3-wo-gZY">
-            <objects>
-                <viewController id="1Qb-FM-MnY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xqx-S7-3qt">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="hou-n1-OHw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FN1-LY-zaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1500" y="324"/>
-        </scene>
-        <!--View Controller - Item 1-->
+        <!--Hype Swipe GameVC - Hype Swipe-->
         <scene sceneID="QWF-kf-o3O">
             <objects>
-                <viewController id="zfp-iq-o9P" sceneMemberID="viewController">
+                <viewController id="zfp-iq-o9P" customClass="HypeSwipeGameVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hx3-wd-xu5">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backgroundgradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="6GJ-Vd-JJ6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="461" id="qUT-qv-oAg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topyahoobar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Izq-GI-tVg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="wfi-f7-5So"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-M6-ljV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SSN-W9-GHA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdz-eS-x3G">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="5w2-Ai-gv0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="I1A-Pg-i0K">
+                                <color key="pageIndicatorTintColor" red="1" green="0.0" blue="0.02169921121" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.1105147806" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrn-Qp-9wJ">
+                                <connections>
+                                    <outlet property="delegate" destination="zfp-iq-o9P" id="jfy-HI-qV7"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-qe-YVe">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="FHk-oy-1ww"/>
+                                    <constraint firstAttribute="width" constant="195" id="pWK-be-y3p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Num" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeA-uP-7DX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tek-M2-UKg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mdz-eS-x3G" firstAttribute="baseline" secondItem="GeA-uP-7DX" secondAttribute="baseline" type="default" id="0w9-xJ-UEe"/>
+                            <constraint firstItem="mdz-eS-x3G" firstAttribute="bottom" secondItem="I1A-Pg-i0K" secondAttribute="bottom" type="default" id="5ob-yX-Yyj"/>
+                            <constraint firstItem="vUU-M6-ljV" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6Mc-D8-pDy"/>
+                            <constraint firstItem="mdz-eS-x3G" firstAttribute="leading" secondItem="GeA-uP-7DX" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Cdw-zK-aK7"/>
+                            <constraint firstItem="6GJ-Vd-JJ6" firstAttribute="trailing" secondItem="hx3-wd-xu5" secondAttribute="trailing" type="default" id="Crt-3C-ZQ6"/>
+                            <constraint firstItem="xrn-Qp-9wJ" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" type="default" id="F5F-Q9-JEC"/>
+                            <constraint firstAttribute="trailing" secondItem="KBp-qe-YVe" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="M6q-Mq-Fwd"/>
+                            <constraint firstItem="GeA-uP-7DX" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="MRb-5d-GxM"/>
+                            <constraint firstItem="xrn-Qp-9wJ" firstAttribute="top" secondItem="KBp-qe-YVe" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="N4r-Wp-NJI"/>
+                            <constraint firstItem="mdz-eS-x3G" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Onf-Sz-Q8q"/>
+                            <constraint firstItem="mdz-eS-x3G" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="70" id="Pty-XD-6iX"/>
+                            <constraint firstItem="Izq-GI-tVg" firstAttribute="trailing" secondItem="hx3-wd-xu5" secondAttribute="trailing" type="default" id="UW3-fs-uov"/>
+                            <constraint firstItem="KBp-qe-YVe" firstAttribute="top" secondItem="I1A-Pg-i0K" secondAttribute="top" type="default" id="ZyT-ua-Lpt"/>
+                            <constraint firstItem="mdz-eS-x3G" firstAttribute="leading" secondItem="vUU-M6-ljV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gVr-3o-FYN"/>
+                            <constraint firstAttribute="trailing" secondItem="I1A-Pg-i0K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gY6-BJ-x9O"/>
+                            <constraint firstItem="GeA-uP-7DX" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="i9f-Bg-Ig8"/>
+                            <constraint firstItem="6GJ-Vd-JJ6" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" type="default" id="o5s-NF-WDf"/>
+                            <constraint firstItem="Izq-GI-tVg" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="-20" id="piU-1B-Efd"/>
+                            <constraint firstItem="KBp-qe-YVe" firstAttribute="top" secondItem="vUU-M6-ljV" secondAttribute="top" type="default" id="psZ-To-aMq"/>
+                            <constraint firstItem="6GJ-Vd-JJ6" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" type="default" id="s7n-l0-EHZ"/>
+                            <constraint firstItem="xrn-Qp-9wJ" firstAttribute="bottom" secondItem="hx3-wd-xu5" secondAttribute="bottom" type="default" id="w0S-pX-uB9"/>
+                            <constraint firstItem="xrn-Qp-9wJ" firstAttribute="trailing" secondItem="hx3-wd-xu5" secondAttribute="trailing" type="default" id="yUP-eI-KuX"/>
+                            <constraint firstItem="Izq-GI-tVg" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" type="default" id="ysV-wS-GZR"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="par-Dk-nGs"/>
+                    <tabBarItem key="tabBarItem" title="Hype Swipe" image="helmet3.png" id="par-Dk-nGs"/>
+                    <connections>
+                        <outlet property="pageControl" destination="I1A-Pg-i0K" id="tyC-AO-das"/>
+                        <outlet property="scrollView" destination="xrn-Qp-9wJ" id="UTM-N7-wtv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTt-ok-DvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500" y="-240"/>
         </scene>
+        <!--ScoreboardTVC - Scoreboard-->
+        <scene sceneID="CQz-jk-zPg">
+            <objects>
+                <tableViewController id="rfK-vW-Gea" customClass="ScoreboardTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8Rr-YC-Kkt">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Rank Team Score" textLabel="Yrw-hy-Biy" detailTextLabel="G2I-RZ-u0f" style="IBUITableViewCellStyleValue1" id="wHs-XL-jHp">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrw-hy-Biy">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2I-RZ-u0f">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rfK-vW-Gea" id="QUp-LP-xPQ"/>
+                            <outlet property="delegate" destination="rfK-vW-Gea" id="1lv-8L-bnV"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Scoreboard" image="scoreboardicon2.png" id="HRI-5e-ru2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10A-oS-CoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="360"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5St-sf-8tQ">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="ArW-9r-jlj" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="VTW-gZ-QYA">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zfp-iq-o9P" kind="relationship" relationship="viewControllers" id="wGb-eg-qbD"/>
-                        <segue destination="1Qb-FM-MnY" kind="relationship" relationship="viewControllers" id="FyW-r7-jhU"/>
+                        <segue destination="zfp-iq-o9P" kind="relationship" relationship="viewControllers" id="ab5-RZ-AMH"/>
+                        <segue destination="rfK-vW-Gea" kind="relationship" relationship="viewControllers" id="gaH-um-Wid"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlY-G5-yoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="41"/>
+            <point key="canvasLocation" x="976" y="-5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backgroundgradient.png" width="640" height="960"/>
+        <image name="helmet3.png" width="30" height="26"/>
         <image name="player_screen_0001_Layer-3-copy.png" width="531" height="324"/>
-        <image name="player_screen_0002_Layer-1.png" width="640" height="960"/>
+        <image name="scoreboardicon2.png" width="30" height="15"/>
         <image name="splash_screen_0002_Layer-5.png" width="123" height="123"/>
+        <image name="topyahoobar.png" width="640" height="142"/>
     </resources>
     <classes>
+        <class className="HypeSwipeGameVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HypeSwipeGameVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ScoreboardTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreboardTVC.h"/>
         </class>
         <class className="SplashViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashViewController.h"/>

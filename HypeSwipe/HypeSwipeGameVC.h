@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HypeSwipeGameVC : UIViewController
+@interface HypeSwipeGameVC : UIViewController  <UIScrollViewDelegate>
+
+@property (nonatomic, strong) NSArray *playerViewArray;
 
 @end
