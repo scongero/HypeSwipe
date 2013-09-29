@@ -87,25 +87,25 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topyahoobar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Izq-GI-tVg">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="95h-P7-Oj9"/>
+                                    <constraint firstAttribute="height" constant="72" id="kxm-nq-9h7"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-M6-ljV">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="X7Y-AB-FMP"/>
-                                    <constraint firstAttribute="height" constant="21" id="qPA-8a-5J9"/>
+                                    <constraint firstAttribute="height" constant="73" id="95h-P7-Oj9"/>
+                                    <constraint firstAttribute="width" constant="42" id="QD7-g7-dg3"/>
+                                    <constraint firstAttribute="height" constant="21" id="lCE-ky-uqf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
+                                    <constraint firstAttribute="width" constant="42" id="X7Y-AB-FMP"/>
+                                    <constraint firstAttribute="height" constant="21" id="qPA-8a-5J9"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdz-eS-x3G">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="xOh-G9-ueV"/>
+                                    <constraint firstAttribute="width" constant="42" id="7Qp-C9-qVH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
+                                    <constraint firstAttribute="width" constant="42" id="xOh-G9-ueV"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="I1A-Pg-i0K">
                                 <color key="pageIndicatorTintColor" red="1" green="0.0" blue="0.02169921121" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,24 +118,28 @@
                             </scrollView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-qe-YVe">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="195" id="Ykr-lb-Vaz"/>
-                                    <constraint firstAttribute="height" constant="32" id="g2Y-32-8RN"/>
+                                    <constraint firstAttribute="height" constant="32" id="5l2-6W-xm9"/>
+                                    <constraint firstAttribute="width" constant="195" id="maA-TA-Vsg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
+                                    <constraint firstAttribute="width" constant="195" id="Ykr-lb-Vaz"/>
+                                    <constraint firstAttribute="height" constant="32" id="g2Y-32-8RN"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Num" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeA-uP-7DX">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="hOs-aC-NMW"/>
+                                    <constraint firstAttribute="height" constant="21" id="UPE-AI-dd3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
+                                    <constraint firstAttribute="height" constant="21" id="hOs-aC-NMW"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vUU-M6-ljV" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" constant="5" id="0TS-Bd-IiX"/>
+                            <constraint firstItem="6GJ-Vd-JJ6" firstAttribute="top" secondItem="hx3-wd-xu5" secondAttribute="top" type="default" id="2zw-gW-J0t"/>
+                            <constraint firstItem="vUU-M6-ljV" firstAttribute="bottom" secondItem="KBp-qe-YVe" secondAttribute="bottom" type="default" id="3K2-3b-o8G"/>
+                            <constraint firstItem="I1A-Pg-i0K" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="154" id="5vT-Cb-9UE"/>
                             <constraint firstItem="GeA-uP-7DX" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1aV-IO-7wG"/>
                             <constraint firstItem="Izq-GI-tVg" firstAttribute="leading" secondItem="hx3-wd-xu5" secondAttribute="leading" type="default" id="500-ON-u3f"/>
                             <constraint firstItem="xrn-Qp-9wJ" firstAttribute="bottom" secondItem="hx3-wd-xu5" secondAttribute="bottom" type="default" id="ARv-rP-uCA"/>
@@ -158,12 +162,8 @@
                             <constraint firstItem="I1A-Pg-i0K" firstAttribute="top" secondItem="KBp-qe-YVe" secondAttribute="top" type="default" id="sae-3F-CWi"/>
                             <constraint firstItem="xrn-Qp-9wJ" firstAttribute="top" secondItem="KBp-qe-YVe" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="te2-Sv-c7V"/>
                             <constraint firstItem="6GJ-Vd-JJ6" firstAttribute="trailing" secondItem="hx3-wd-xu5" secondAttribute="trailing" type="default" id="x9h-Rd-unI"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Hype Swipe" image="helmet3.png" id="par-Dk-nGs"/>
                     <connections>
                         <outlet property="pageControl" destination="I1A-Pg-i0K" id="tyC-AO-das"/>
-                        <outlet property="scrollView" destination="xrn-Qp-9wJ" id="mw7-Vz-g75"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTt-ok-DvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,10 +230,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zfp-iq-o9P" kind="relationship" relationship="viewControllers" id="ab5-RZ-AMH"/>
                         <segue destination="rfK-vW-Gea" kind="relationship" relationship="viewControllers" id="gaH-um-Wid"/>
                     </connections>
                 </tabBarController>
+                        <segue destination="zfp-iq-o9P" kind="relationship" relationship="viewControllers" id="ab5-RZ-AMH"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlY-G5-yoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="833" y="-10"/>

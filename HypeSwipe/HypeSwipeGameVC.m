@@ -75,6 +75,28 @@
     [super viewDidLoad];
     
     
+    
+    
+    playerViewArray = [[NSArray alloc] initWithObjects:@"image1.jpg", @"image2.jpg", @"image3.jpg",nil];
+    
+    for (int i = 0; i < [playerViewArray count]; i++)
+    {
+        CGRect frame;
+        frame.origin.x = self.scrollView.frame.size.width *i;
+        frame.origin.y = 0;
+        frame.size = self.scrollView.frame.size;
+
+        
+        
+        UIImageView *photoView = [[UIImageView alloc] initWithFrame:frame];
+        photoView.image = [UIImage imageNamed:[playerViewArray objectAtIndex:i]];
+        [self.scrollView addSubview:photoView];
+        [self.scrollView setShowsHorizontalScrollIndicator:NO];
+        [self.scrollView setShowsVerticalScrollIndicator:NO];
+
+    }
+    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * [playerViewArray count], scrollView.frame.size.height);
+    
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)sender
@@ -83,7 +105,6 @@
     int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) +1;
     self.pageControl.currentPage = page;
 }
-    
 
 
     
