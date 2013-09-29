@@ -30,6 +30,8 @@
 
 -(void)viewDidLayoutSubviews
 {
+    NSMutableDictionary *dict = [PlayerDatabase playerDictionary];
+    
     Player *player1 = [[PlayerDatabase playerClass]objectAtIndex:0];
     Player *player2 = [[PlayerDatabase playerClass]objectAtIndex:1];
     Player *player3 = [[PlayerDatabase playerClass]objectAtIndex:2];
